@@ -1,0 +1,15 @@
+{
+  "name": "tour-to-iceland",
+  "version": "1.0.0",
+  "description": "Landgin page for an author's tour to Iceland",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "melomory",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0"
+  }
+}
