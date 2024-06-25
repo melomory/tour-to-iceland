@@ -1223,6 +1223,9 @@ body {
 .socials__link {
   line-height: 1;
 }
+.socials__link:hover {
+  opacity: 0.9;
+}
 .popup {
   position: absolute;
   width: 290px;
