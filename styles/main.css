@@ -865,6 +865,14 @@ body {
   background: calc(50% + 96px) calc(50% - 26px) / 110vw no-repeat url(../images/bg-hills.jpg);
   min-height: 700px;
 }
+.video__player {
+  position: relative;
+  top: 0;
+  left: calc(50% - min(1140px, 100vw) / 2);
+  display: none;
+  min-height: 700px;
+  width: min(1140px, 100vw);
+}
 .video__play-action {
   position: absolute;
   top: calc(100% / 2 - 40px);
@@ -1797,6 +1805,9 @@ body {
     background-size: 227vw;
     background-position-x: calc((506px - 227vw) / 2.27);
     background-position-y: calc((355px - 227vw) / 2.27);
+  }
+  .video__player {
+    min-height: 222px;
   }
   .video__play-action {
     top: calc(100% / 2 - 33px);
