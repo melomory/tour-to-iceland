@@ -8,7 +8,8 @@ $(() => {
   });
 
 
-  initProgramSlider();
+  initProgramSlider($(".program__slider"));
+  initReviewSlider($(".review__slider"));
 });
 
 function showPreviousSlide($slides) {
@@ -32,11 +33,22 @@ function updateSlider($slides) {
   })
 }
 
-function initProgramSlider() {
-  const $programSlider = $(".program__slider");
-  const $prevButton = $programSlider.find(".slider-btn_prev");
-  const $nextButton = $programSlider.find(".slider-btn_next");
-  const $slides = $programSlider.find(".program__tour");
+function initProgramSlider($slider) {
+  const $prevButton = $slider.find(".slider-btn_prev");
+  const $nextButton = $slider.find(".slider-btn_next");
+  const $slides = $slider.find(".program__tour");
+  $slides.currentSlide = 0;
+
+  $prevButton.on("click", () => showPreviousSlide($slides));
+  $nextButton.on("click", () => showNextSlide($slides));
+
+  updateSlider($slides) 
+}
+
+function initReviewSlider($slider) {
+  const $prevButton = $slider.find(".slider-btn_prev");
+  const $nextButton = $slider.find(".slider-btn_next");
+  const $slides = $slider.find(".review-card");
   $slides.currentSlide = 0;
 
   $prevButton.on("click", () => showPreviousSlide($slides));
