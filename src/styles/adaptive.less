@@ -1,0 +1,884 @@
+@import (less) "colors";
+
+@media screen and (max-width: 1473px) {
+  .hero {
+    &__image {
+      max-width: calc(100vw / 2 + 277px);
+    }
+  }
+
+  .video {
+    &__container {
+      background: calc(50% + 96px) calc(50% - 26px) / 140vw no-repeat url(../images/bg-hills.jpg);
+    }
+  }
+}
+
+@media screen and (max-width: 1139px) {
+  .hero {
+    &__container {
+      padding: 0;
+    }
+
+    &__title {
+      color: @secondary-color;
+      margin-left: 20px;
+    }
+
+    &__description {
+      color: @secondary-color;
+      margin-left: 20px;
+    }
+
+    &__btn {
+      margin-left: 20px;
+    }
+
+    &__image {
+      left: 0;
+      max-width: 100%;
+      background-position-x: -480px;
+    }
+
+    &__details {
+      margin-right: 20px;
+    }
+  }
+
+  .advantages {
+    &__item {
+      &:nth-of-type(4) {
+        left: 0;
+      }
+    }
+  }
+
+  .gallery {
+    &__image {
+      &:nth-child(2) {
+        left: calc(100vw / -400);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1049px) {
+  .gallery {
+    &__image {
+      width: 75%;
+
+      &:nth-child(1) {
+        grid-column: 1 / span 12;
+        grid-row: 1;
+        position: static;
+        align-self: center;
+        justify-self: center;
+      }
+
+      &:nth-child(2) {
+        grid-column: 1 / span 12;
+        grid-row: 1;
+        position: static;
+        align-self: center;
+        justify-self: center;
+      }
+
+      &:nth-child(3) {
+        grid-column: 1 / span 12;
+        grid-row: 1;
+        position: static;
+        align-self: center;
+        justify-self: center;
+      }
+
+      &:nth-child(4) {
+        grid-column: 1 / span 12;
+        grid-row: 1;
+        position: static;
+        align-self: center;
+        justify-self: center;
+      }
+
+      &:nth-child(5) {
+        grid-column: 1 / span 12;
+        grid-row: 1;
+        position: static;
+        align-self: center;
+        justify-self: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .hero {
+    &__title {
+      margin: 49px 20px 0 20px;
+      text-align: center;
+      font-size: 30px;
+      line-height: 1.067;
+      letter-spacing: 0.01px;
+    }
+
+    &__description {
+      grid-row: 5;
+      color: @primary-color;
+      margin: 50px auto 0;
+      text-align: center;
+      padding: 0 15px;
+
+      &_accent {
+        color: @primary-color;
+      }
+    }
+
+    &__btn {
+      grid-column: 1 / span 12;
+      grid-row: 7;
+      justify-self: center;
+      margin-left: 0;
+    }
+
+    &__play-action {
+      grid-row: 2;
+      margin: 32px 0 0 13px;
+      justify-self: center;
+    }
+
+    &__image {
+      left: 0;
+      background-position-x: calc((-113px - 235vw) / 2.35);
+      background-position-y: calc((443px - 150vw) / 2.35);
+      background-size: 235vw auto;
+      grid-row: 1 / 5;
+      max-width: 100%;
+      min-height: 480px;
+    }
+
+    &__details {
+      grid-column: 1 / span 12;
+      grid-row: 6;
+      margin: 0 auto;
+      min-height: 329px;
+    }
+  }
+
+  .about {
+    &__container {
+      justify-items: center;
+    }
+
+    &__title {
+      grid-column: 1 / span 12;
+      grid-row: 1;
+    }
+
+    &__text {
+      grid-column: 1 / span 12;
+      grid-row: 3;
+      max-width: 90vw;
+    }
+
+    &__media {
+      grid-column: 1 / span 12;
+      grid-row: 2;
+      margin-bottom: 29px;
+    }
+  }
+
+  .advantages {
+    background: calc(50% + -85px) calc(50% + 34px) / auto no-repeat url(../images/dotted-line-2.svg);
+
+    &__item {
+      max-width: 234px;
+      justify-self: center;
+
+      &:nth-of-type(1) {
+        grid-column: 1 / span 12;
+        grid-row: 1;
+
+        top: 0;
+        left: 0;
+      }
+
+      &:nth-of-type(2) {
+        grid-column: 1 / span 12;
+        grid-row: 2;
+
+        top: 0;
+        left: 0;
+      }
+
+      &:nth-of-type(3) {
+        grid-column: 1 / span 12;
+        grid-row: 3;
+
+        top: 0;
+        left: 0;
+      }
+
+      &:nth-of-type(4) {
+        grid-column: 1 / span 12;
+        grid-row: 4;
+
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  .places {
+    &__item {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+  .video {
+    &__container {
+      background: calc(50% + 96px) calc(50% - 45px) / 153vw no-repeat url(../images/bg-hills.jpg);
+    }
+  }
+
+  .program {
+    &__tour-media {
+      grid-column: 2 / span 10;
+      grid-row: 3;
+    }
+
+    &__tour-day {
+      grid-column: 2 / span 10;
+      grid-row: 1;
+      margin-left: 0;
+    }
+
+    &__tour-title {
+      grid-column: 2 / span 10;
+      grid-row: 2;
+      margin-left: 0;
+
+    }
+
+    &__tour-text {
+      grid-column: 2 / span 10;
+      grid-row: 4;
+      margin: 19px 0 37px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    &__actions {
+      grid-column: 2 / span 10;
+      grid-row: 5;
+      margin-left: 0;
+    }
+
+    &__download-link {
+      grid-column: 2 / span 10;
+      grid-row: 6;
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 939px) {
+  .review-card {
+    &__text {
+      grid-column: 1 / span 12;
+      grid-row: 3;
+      max-width: unset;
+    }
+
+    &__actions {
+      grid-column: 1 / span 12;
+      grid-row: 6;
+
+      margin-top: 67px;
+      display: flex;
+      gap: 6px;
+    }
+
+    &__media {
+      grid-column: 1 / span 12;
+      grid-row: 5;
+      justify-self: left;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .burger {
+    display: unset;
+    margin-top: -0.3em;
+  }
+
+  .header {
+    padding-top: 29px;
+    padding-bottom: 22px;
+
+    &__navigation-menu {
+      display: none;
+      // display: flex; // TODO: use js
+      flex-direction: column;
+      width: 195px;
+      background: @primary-color;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 0;
+      padding: 89px 0 0 0;
+      z-index: 4;
+      gap: 13px;
+    }
+
+    &__cancel {
+      // display: unset; // TODO: use js
+      position: absolute;
+      top: 28px;
+      right: 15px;
+      z-index: 4;
+    }
+
+    &__navigation-item {
+      &:last-of-type {
+        border-top: 1px solid @secondary-color;
+        margin-top: 36px;
+        padding-bottom: 7px;
+        position: relative;
+      }
+    }
+
+    &__logo-navigation {
+      position: relative;
+      top: -13px;
+      left: 87px;
+      width: 30px;
+      height: 30px;
+    }
+
+    &__link {
+      margin-left: 23px;
+      color: @secondary-color;
+    }
+  }
+
+  .about {
+    &__media {
+      grid-column: 2 / span 11;
+      justify-self: start;
+    }
+  }
+
+  .places {
+    &__map-path {
+      scale: 0.9
+    }
+  }
+
+  &__container {
+    background: calc(50% + 96px) calc(50% - 45px) / 248vw no-repeat url(../images/bg-hills.jpg);
+  }
+
+  .footer {
+    &__container {
+      display: flex;
+      padding: 0 15px;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+  }
+
+  .play-btn {
+    &__icon {
+      width: 41px;
+      height: 41px;
+      border-radius: 50%;
+
+      &::before {
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        border-left: 10px solid #fff;
+        top: 13px;
+        left: 16px;
+      }
+    }
+
+    &__info {
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    &__media {
+      grid-column: 1 / span 12;
+    }
+  }
+
+  .program {
+    &__tour-media {
+      grid-column: 2 / span 11;
+      padding: 20px 0 18px 46px;
+      max-width: 245px;
+    }
+
+    &__tour-image {
+      max-width: 245px;
+      width: unset;
+    }
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .advantages {
+    background: calc(50% + -85px) calc(50% + 59px) / auto no-repeat url(../images/dotted-line-2.svg);
+  }
+
+  .about {
+    &__media {
+      padding: 40px 0 40px 26px;
+      max-width: 342px;
+    }
+
+    &__image {
+      max-width: 375px;
+    }
+  }
+}
+
+@media screen and (max-width: 474px) {
+  .hero {
+    padding-bottom: 79px;
+
+    &__container {
+      column-gap: 0;
+    }
+
+    &__description {
+      font-size: 20px;
+      line-height: 1.08;
+      margin: 78px 53px 0 56px;
+    }
+
+    &__play-action {
+      grid-column: 1 / span 12;
+      margin: 28px 0 0 -4px;
+    }
+
+    &__curve {
+      transform: scaleX(0.75);
+      top: 111px;
+      left: -21px;
+    }
+
+    &__details {
+      min-width: min(320px, 100vw);
+    }
+
+    &__detail-item {
+      &:nth-of-type(1) {
+        top: 101px;
+        left: 16px;
+      }
+
+      &:nth-of-type(2) {
+        top: -57px;
+        left: 79px;
+      }
+
+      &:nth-of-type(3) {
+        top: -104px;
+        left: 238px;
+        line-height: 1.185;
+      }
+    }
+  }
+
+  .about {
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+    &__title {
+      font-size: 25px;
+      justify-self: start;
+      margin-left: 0;
+      margin-bottom: 46px;
+    }
+
+    &__text {
+      font-size: 14px;
+      margin-left: 0;
+      justify-self: start;
+      line-height: 1.5;
+    }
+
+    &__media {
+      padding: 40px 0 40px 26px;
+      max-width: 232px;
+    }
+
+    &__image {
+      max-width: 265px;
+    }
+  }
+
+  .advantages {
+    padding-top: 29px;
+    padding-bottom: 61px;
+    background-position-x: 64.5%;
+    background-position-y: 46.5%;
+
+    &__title {
+      font-size: 25px;
+      margin-left: 3px;
+      margin-bottom: 28px;
+    }
+
+    &__list {
+      column-gap: 0;
+      row-gap: 36px;
+    }
+
+    &__item {
+      max-width: 234px;
+
+      &::before {
+        font-size: 25px;
+        line-height: 1.88;
+        width: 49px;
+        height: 49px;
+      }
+
+      &:nth-of-type(2) {
+        top: 15px;
+      }
+
+      &:nth-of-type(3) {
+        top: 7px;
+      }
+    }
+
+    &__item-title {
+      margin-top: 8px;
+      margin-bottom: 13px;
+    }
+  }
+
+  .places {
+    padding-bottom: 80px;
+
+    &__title {
+      font-size: 25px;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    &__info-title {
+      margin-top: 36px;
+      margin-bottom: 33px;
+    }
+
+    &__info-text {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    &__info-media {
+      margin-top: 41px;
+      padding: 21px 0 21px;
+      max-width: min(217px, 100vw);
+      height: unset;
+    }
+
+    &__info-image {
+      top: 0;
+      left: -73px;
+
+      width: unset;
+      max-width: min(237px, 100vw);
+    }
+
+    &__map-name {
+      font-family: "Corinthia", cursive;
+      top: 48.5%;
+      left: 51.6%;
+    }
+
+    &__map-path {
+      top: 36.8%;
+      left: 15.4%;
+      scale: 0.8;
+    }
+
+    &__map-path-item {
+      width: 23px;
+      height: 23px;
+      font-size: 12px;
+
+      &:nth-of-type(1) {
+        top: 38.8%;
+        left: 15%;
+      }
+
+      &:nth-of-type(2) {
+        top: 57%;
+        left: 26%;
+      }
+
+      &:nth-of-type(3) {
+        top: 68%;
+        left: 19.2%;
+      }
+
+      &:nth-of-type(4) {
+        top: 81%;
+        left: 22%;
+      }
+
+      &:nth-of-type(5) {
+        top: 81.7%;
+        left: 38.2%;
+      }
+
+      &_active {
+        width: 26px;
+        height: 26px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .video {
+    &__container {
+      position: relative;
+      min-height: 222px;
+      background-size: 227vw;
+      background-position-x: calc((506px - 227vw) / 2.27);
+      background-position-y: calc((355px - 227vw) / 2.27);
+    }
+
+    &__play-action {
+      top: calc(100% / 2 - 33px);
+      left: calc(100% / 2 - 102px);
+    }
+
+    &__play-btn {
+
+      top: calc(100% / 2 - 23px);
+      left: calc(100% / 2 - 102px);
+    }
+  }
+
+  .play-btn {
+    &__info_big {
+      font-size: 13px;
+      top: -27px;
+      line-height: 1.462;
+      max-width: 200px;
+    }
+
+    &_big {
+      gap: 11px;
+    }
+  }
+
+  .program {
+    padding-top: 53px;
+    padding-bottom: 32px;
+
+    &__title {
+      font-size: 25px;
+      text-align: left;
+      margin-bottom: 38px;
+    }
+
+    &__tour {
+      column-gap: 0;
+    }
+
+    &__tour-media {
+      grid-column: 1 / span 12;
+    }
+
+    &__tour-day {
+      grid-column: 1 / span 12;
+      font-size: 20px;
+    }
+
+    &__tour-title {
+      grid-column: 1 / span 12;
+      margin-top: 14px;
+      margin-bottom: 23px;
+
+      line-height: 1.25;
+    }
+
+    &__tour-text {
+      grid-column: 1 / span 12;
+      font-size: 14px;
+      margin-top: 19px;
+      margin-bottom: 37px;
+
+      line-height: 1.5;
+    }
+
+    .program__actions {
+      grid-column: 1 / span 12;
+      margin-bottom: 23px;
+    }
+
+    .program__download-link {
+      grid-column: 1 / span 12;
+    }
+  }
+
+  .reviews {
+    padding-top: 24px;
+    padding-bottom: 20px;
+
+    &__title {
+      font-size: 25px;
+    }
+  }
+
+  .review-card {
+    padding: 13px 16px 41px 15px;
+    column-gap: 0;
+
+    &__rating {
+      margin-top: 26px;
+      margin-bottom: 11px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    &__media {
+      grid-column: 1 / span 12;
+      padding-top: 7px;
+    }
+
+    &__actions {
+      margin-top: 67px;
+    }
+  }
+
+  .gallery {
+    padding-top: 34px;
+    padding-bottom: 82px;
+
+    &__title {
+      font-size: 25px;
+      margin-bottom: 39px;
+    }
+
+    &__slider {
+      column-gap: 0;
+      min-height: unset;
+    }
+  }
+
+  .order {
+    padding-top: 14px;
+    min-height: 505px;
+    background-position-x: -519px;
+    background-position-y: 2px;
+    background-size: 458vw;
+
+    &__title {
+      font-size: 25px;
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    &__form {
+      padding: 0 15px;
+      gap: 21px;
+    }
+
+    &__form-text {
+      margin-bottom: 20px;
+    }
+
+    &__form-radio {
+      height: 30px;
+      width: 30px;
+      font-size: 17px;
+      line-height: 1;
+    }
+  }
+
+  .footer {
+    padding-top: 40px;
+
+    &__container {
+      gap: 26px;
+    }
+
+    &__tel {
+      line-height: 0.3;
+    }
+  }
+
+  .socials {
+    gap: 22px;
+  }
+
+  .social {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .places {
+    &__map-path {
+      top: 35.8%;
+      left: 14.4%;
+      scale: 0.66;
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .advantages {
+    background-position-x: 64.5%;
+    background-position-y: 54.5%;
+  }
+}
+
+@media screen and (max-width: 398px) {
+  .places {
+    &__map-path {
+      top: 28.8%;
+      left: 12.5%;
+      scale: 0.7;
+    }
+  }
+}
+
+
+@media screen and (max-width: 360px) {
+  .places {
+    &__map-path {
+      top: 25.8%;
+      left: 11.5%;
+      scale: 0.66;
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .places {
+    &__map-path {
+      top: 23.8%;
+      left: 9.5%;
+      scale: 0.6;
+    }
+  }
+}
