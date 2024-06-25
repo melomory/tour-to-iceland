@@ -576,6 +576,16 @@ body {
     min-height: 700px;
   }
 
+  &__player {
+    position: relative;
+    top: 0;
+    left: calc((50% - min(1140px, 100vw) / 2));
+    display: none; //TODO: use js
+
+    min-height: 700px;
+    width: min(1140px, 100vw);
+  }
+
   &__play-action {
     position: absolute;
     top: calc(100% / 2 - 40px);
