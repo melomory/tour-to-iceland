@@ -22,10 +22,100 @@ $(() => {
     delegate: "img",
     type: "image",
     callbacks: {
-      elementParse: (item) => item.src = item.el.attr("src"),
+      elementParse: (item) => (item.src = item.el.attr("src")),
     },
   });
+
+  const $popupContainer = $(".popup-container");
+  $popupContainer
+    .find(".popup__cancel")
+    .on("click", () => $popupContainer.css({ display: "none" }));
+  $popupContainer
+    .find(".popup__btn")
+    .on("click", () => $popupContainer.css({ display: "none" }));
+
+  $("#create-order").on("click", function (evt) {
+    evt.preventDefault();
+
+    if (isFormValid()) {
+      sendForm();
+    }
+  });
 });
+
+function isFormValid() {
+  const $orderForm = $("#order-form");
+
+  let isValid = true;
+
+  $orderForm.find(".order__form-control").each(function () {
+    const $control = $(this);
+
+    if (
+      !(
+        ($control.is("input") && $control.val()) ||
+        $control
+          .find("input")
+          .toArray()
+          .some((item) => $(item).is(":checked"))
+      )
+    ) {
+      const messageText = "Необходимо заполнить";
+      if (!$control.next().hasClass("error-message")) {
+        $control
+          .after($("<p></p>").text(messageText).addClass("error-message"))
+          .addClass("error-border");
+      }
+
+      isValid &&= false;
+    } else {
+      $control.removeClass("error-border");
+
+      if ($control.next().hasClass("error-message")) {
+        $control.next().remove();
+      }
+    }
+
+    isValid &&= true;
+  });
+
+  return isValid;
+}
+
+function sendForm() {
+  let $loader = $(".loader");
+  $loader.css("display", "flex");
+  offScroll();
+
+  $.ajax({
+    type: "POST",
+    url: "https://testologia.ru/checkout",
+    data: $("#order-form").serialize(),
+  }).done(function (response) {
+    $loader.hide();
+    onScroll();
+
+    if (response.success) {
+      $(".popup-container").css({ display: "block" });
+    } else {
+      alert(
+        "Возникла ошибка при отправке заявки, позвоните нам и сообщите нам о проблеме."
+      );
+    }
+  });
+}
+
+function offScroll() {
+  $("html, body").css({
+    overflow: "hidden",
+  });
+}
+
+function onScroll() {
+  $("html, body").css({
+    overflow: "auto",
+  });
+}
 
 function showPreviousSlide($slides) {
   $slides.currentSlide =
