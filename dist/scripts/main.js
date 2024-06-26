@@ -64,7 +64,10 @@ function isFormValid() {
 
     if (
       !(
-        ($control.is("input") && $control.val()) ||
+        ($control.is("input") &&
+          (($control.attr("type") === "text" && $control.val()) ||
+            ($control.attr("type") === "tel" &&
+              !$control.val().includes("_")))) ||
         $control
           .find("input")
           .toArray()
