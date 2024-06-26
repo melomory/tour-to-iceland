@@ -64,6 +64,17 @@
 
 @media screen and (max-width: 1049px) {
   .gallery {
+
+    // Увеличена специфичность для использования библиотеки owl.carousel.
+    & &__single {
+      display: block;
+    }
+
+    // Увеличена специфичность для использования библиотеки owl.carousel.
+    & &__multiple {
+      display: none;
+    }
+
     &__image {
       width: 75%;
 
@@ -106,6 +117,17 @@
         align-self: center;
         justify-self: center;
       }
+    }
+  }
+
+  // Адаптация библиотеки owl.carousel.
+  .owl-carousel {
+    .owl-item img {
+      width: unset;
+    }
+
+    .owl-nav {
+      display: none;
     }
   }
 }

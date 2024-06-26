@@ -7,9 +7,24 @@ $(() => {
     $("#video-player").css({ display: "block" });
   });
 
-
   initProgramSlider($(".program__slider"));
   initReviewSlider($(".review__slider"));
+
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: true,
+    items: 1,
+  });
+
+  $(".gallery__slider").magnificPopup({
+    delegate: "img",
+    type: "image",
+    callbacks: {
+      elementParse: (item) => item.src = item.el.attr("src"),
+    },
+  });
 });
 
 function showPreviousSlide($slides) {
@@ -26,11 +41,11 @@ function showNextSlide($slides) {
 function updateSlider($slides) {
   $slides.each(function (index) {
     if (index === $slides.currentSlide) {
-      $(this).css({display: "grid"});
-    } else  {
-      $(this).css({display: "none"});
+      $(this).css({ display: "grid" });
+    } else {
+      $(this).css({ display: "none" });
     }
-  })
+  });
 }
 
 function initProgramSlider($slider) {
@@ -42,7 +57,7 @@ function initProgramSlider($slider) {
   $prevButton.on("click", () => showPreviousSlide($slides));
   $nextButton.on("click", () => showNextSlide($slides));
 
-  updateSlider($slides) 
+  updateSlider($slides);
 }
 
 function initReviewSlider($slider) {
@@ -54,5 +69,5 @@ function initReviewSlider($slider) {
   $prevButton.on("click", () => showPreviousSlide($slides));
   $nextButton.on("click", () => showNextSlide($slides));
 
-  updateSlider($slides) 
+  updateSlider($slides);
 }

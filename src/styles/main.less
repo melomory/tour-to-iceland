@@ -793,7 +793,12 @@ body {
 
 .gallery {
   padding-top: 53px;
-  padding-bottom: 131px;
+  padding-bottom: 85px;
+
+  // Увеличена специфичность для использования библиотеки owl.carousel.
+  & &__single {
+    display: none;
+  }
 
   &__title {
     font-size: 35px;
@@ -814,6 +819,7 @@ body {
 
   &__image {
     position: relative;
+    cursor: pointer;
 
     &:nth-child(1) {
       grid-column: 1 / span 4;
@@ -821,6 +827,9 @@ body {
       align-self: center;
       top: 5px;
       left: 0;
+
+      max-width: 328px;
+      max-height: 290px;
     }
 
     &:nth-child(2) {
@@ -829,6 +838,9 @@ body {
       grid-row: 1;
       top: 0;
       left: -17px;
+
+      max-width: 147px;
+      max-height: 126px;
     }
 
     &:nth-child(3) {
@@ -837,6 +849,9 @@ body {
       grid-row: 1;
       top: 20px;
       left: 13px;
+
+      max-width: 208px;
+      max-height: 145px;
     }
 
     &:nth-child(4) {
@@ -846,12 +861,18 @@ body {
       justify-self: center;
       bottom: 10px;
       left: 4px;
+
+      max-width: 298px;
+      max-height: 167px;
     }
 
     &:nth-child(5) {
       grid-column: 9 / span 4;
       grid-row: 1;
       justify-self: end;
+
+      max-width: 285px;
+      max-height: 380px;
     }
   }
 }
@@ -957,7 +978,7 @@ body {
 
   &__link {
     line-height: 1;
-    
+
     &:hover {
       opacity: 0.9;
     }
@@ -1035,3 +1056,52 @@ body {
 }
 
 @import (less) "adaptive";
+
+// Адаптация библиотеки owl.carousel.
+.owl-carousel {
+  .owl-item img {
+    width: unset;
+  }
+
+  .owl-nav {
+    position: relative;
+    color: @secondary-color;
+    margin-top: 24px;
+
+    button {
+      position: absolute;
+
+      &.owl-prev {
+        font-size: 36px;
+        top: -19px;
+        left: calc(50% - 69px);
+      }
+
+      &.owl-next {
+        font-size: 36px;
+        top: -19px;
+        left: calc(50% + 49px);
+      }
+    }
+  }
+}
+
+.owl-theme {
+  .owl-dots {
+    .owl-dot {
+      span {
+        width: 12px;
+        height: 12px;
+        background: transparent;
+        border: 1px solid @secondary-color;
+        margin: 4px 5px;
+      }
+
+      &.active {
+        span {
+          background: @secondary-color;
+        }
+      }
+    }
+  }
+}
