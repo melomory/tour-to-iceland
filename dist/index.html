@@ -699,8 +699,8 @@
 
     <section id="order" class="order">
       <h2 class="order__title">Забронировать путешествие</h2>
-      <form class="order__form" action="" method="POST">
-        <div>
+      <form id="order-form" class="order__form" action="https://testologia.ru/checkout" method="POST">
+        <div class="order__form-control">
           <p class="order__form-text">Количество человек</p>
           <div class="order__form-radio-buttons">
             <label class="order__form-radio"><input class="order__form-radio-input" type="radio" name="group-size"
@@ -719,10 +719,30 @@
                 value="7">7+</label>
           </div>
         </div>
-        <input class="order__form-text-input" type="text" name="name" placeholder="Ваше имя">
-        <input class="order__form-text-input" type="tel" name="phone" placeholder="Ваш телефон">
-        <button class="order__form-btn" type="submit">Отправить заявку</button>
+        <input class="order__form-text-input order__form-control" type="text" name="name" placeholder="Ваше имя">
+        <input class="order__form-text-input order__form-control" type="tel" name="phone" placeholder="Ваш телефон">
+        <button id="create-order" class="order__form-btn" type="submit">Отправить заявку</button>
       </form>
+
+      <div class="popup-container">
+        <div class="popup">
+          <button class="cancel popup__cancel">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" viewBox="0 0 512 512">
+              <g>
+                <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+                L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+                c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+                l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+                L284.286,256.002z" />
+              </g>
+            </svg>
+          </button>
+          <div class="popup__logo"><img class="popup__logo-image" src="images/iceberg.svg" alt="Логотип"></div>
+          <h2 class="popup__title">Спасибо за заявку!</h2>
+          <p class="popup__text">Ваша заявка принята. В ближайшее время с вами свяжется наш менеджер.</p>
+          <button class="btn popup__btn">Хорошо</button>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
@@ -774,23 +794,20 @@
       </div>
     </footer>
 
-    <div class="popup-container">
-      <div class="popup">
-        <button class="cancel popup__cancel">
-          <svg xmlns="http://www.w3.org/2000/svg" width="21" viewBox="0 0 512 512">
-            <g>
-              <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
-              L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
-              c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
-              l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
-              L284.286,256.002z" />
-            </g>
-          </svg>
-        </button>
-        <div class="popup__logo"><img class="popup__logo-image" src="images/iceberg.svg" alt="Логотип"></div>
-        <h2 class="popup__title">Спасибо за заявку!</h2>
-        <p class="popup__text">Ваша заявка принята. В ближайшее время с вами свяжется наш менеджер.</p>
-        <button class="btn popup__btn">Хорошо</button>
+    <div class="loader">
+      <div class="lds-default">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </div>
 

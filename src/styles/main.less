@@ -1,6 +1,7 @@
 @import (less) "normalize.css";
 @import (less) "colors";
 @import (less) "fonts";
+@import (less) "loader";
 
 * {
   box-sizing: border-box;
@@ -881,6 +882,7 @@ body {
   padding-top: 53px;
   background: center / cover no-repeat url(../images/bg-volcano.jpg);
   min-height: 604px;
+  position: relative;
 
   &__title {
     font-size: 35px;
@@ -985,20 +987,31 @@ body {
   }
 }
 
-.popup {
+.popup-container {
+  width: 100%;
+  height: 100%;
+  background: fade(@primary-color, 50%);
   position: absolute;
-  width: 290px;
-  background: @secondary-color;
   z-index: 4;
+  top: 0;
+  left: 0;
+  display: none;
+}
 
-  display: none; // TODO: use js
-
-  bottom: -3700px;
-  left: 15px;
+.popup {
+  position: relative;
+  width: 290px;
+  min-height: 384px;
+  background: @secondary-color;
+  top: calc(50% - 214px);
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  padding-top: 28px;
 
   &__logo {
     border-bottom: 1px solid @primary-color;
-    margin-top: 28px;
   }
 
   &__logo-image {
@@ -1006,8 +1019,8 @@ body {
     height: 25px;
 
     position: relative;
-    top: 18px;
-    left: 132px;
+    top: 17px;
+    left: calc(50% - 13px);
   }
 
   &__cancel {
@@ -1052,10 +1065,20 @@ body {
     margin: 0 auto;
     display: block;
     margin-bottom: 46px;
+    cursor: pointer;
   }
 }
 
-@import (less) "adaptive";
+.error-message {
+  margin: 0;
+  padding: 0 0 0 20px;
+  color: @error-color;
+}
+
+.error-border {
+  border: 1px solid @error-color;
+  border-radius: 5px;
+}
 
 // Адаптация библиотеки owl.carousel.
 .owl-carousel {
@@ -1105,3 +1128,5 @@ body {
     }
   }
 }
+
+@import (less) "adaptive";
