@@ -45,6 +45,13 @@ $(() => {
   new WOW({
     animateClass: "animate__animated",
   }).init();
+
+  const $element = $("#phone-number");
+  const maskOptions = {
+    mask: "+{7}(000)000-00-00",
+    lazy: false,
+  };
+  const mask = IMask($element.get(0), maskOptions);
 });
 
 function isFormValid() {
