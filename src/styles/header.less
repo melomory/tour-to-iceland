@@ -1,0 +1,38 @@
+.header {
+  background: @secondary-color;
+  padding: 24px 0 17px;
+
+  &__navigation {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__navigation-menu {
+    display: flex;
+    margin-left: auto;
+    gap: 49px;
+    list-style: none;
+  }
+
+  &__navigation-item {
+    &:last-of-type {
+      display: none;
+    }
+  }
+
+  &__logo-navigation {
+    display: none;
+  }
+
+  &__link {
+    color: @primary-color;
+    text-decoration: none;
+    border-bottom: 1px transparent;
+
+    &:hover {
+      border-bottom: 1px solid @darken-color;
+      color: @darken-color;
+    }
+  }
+}

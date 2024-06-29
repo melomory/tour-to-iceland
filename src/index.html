@@ -26,7 +26,7 @@
             <li class="header__navigation-item"><img class="header__logo-navigation" src="images/iceberg-white.svg"
                 alt="Логотип белый"></li>
           </ul>
-          <button class="burger">
+          <button id="burger-button" class="burger">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 612 612">
               <g>
                 <path
@@ -34,7 +34,7 @@
               </g>
             </svg>
           </button>
-          <button class="cancel header__cancel">
+          <button id="header-cancel" class="cancel header__cancel">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" viewBox="0 0 512 512">
               <g>
                 <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
@@ -49,702 +49,714 @@
       </div>
     </header>
 
-    <section class="hero wow animate__fadeIn">
-      <div class="container hero__container">
-        <h1 class="hero__title">Путешес<span class="hero__title_accent">твие в&nbsp;Исландию</span></h1>
-        <p class="hero__description">Авторский тур <span class="hero__description_accent">в страну&nbsp;льда</span></p>
-        <a class="btn hero__btn" href="#order">Забронировать</a>
-        <a class="hero__play-action" href="#video">
-          <div class="play-btn">
-            <div class="play-btn__icon"></div>
-            <p class="play-btn__info">Смотреть видео</p>
+    <main>
+      <section class="hero wow animate__fadeIn">
+        <div class="container hero__container">
+          <h1 class="hero__title">Путешес<span class="hero__title_accent">твие в&nbsp;Исландию</span></h1>
+          <p class="hero__description">Авторский тур <span class="hero__description_accent">в страну&nbsp;льда</span>
+          </p>
+          <a class="btn hero__btn" href="#order">Забронировать</a>
+          <a class="hero__play-action" href="#video">
+            <div class="play-btn">
+              <div class="play-btn__icon"></div>
+              <p class="play-btn__info">Смотреть видео</p>
+            </div>
+          </a>
+          <div class="hero__image"></div>
+          <div class="hero__details">
+            <svg class="hero__curve" xmlns="http://www.w3.org/2000/svg" width="302.5px" height="117.5px">
+              <path fill-rule="evenodd" stroke="rgb(44, 44, 44)" stroke-width="1px" stroke-dasharray="7, 7"
+                stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                d="M6.000,105.999 C6.000,105.999 32.989,37.246 70.1000,34.999 C70.1000,34.999 132.489,8.746 151.1000,28.999 C151.1000,28.999 164.1000,36.746 171.000,57.999 C171.000,57.999 174.989,75.245 189.1000,81.999 C189.1000,81.999 259.989,125.746 241.1000,38.999 C241.1000,38.999 233.989,15.746 271.1000,27.999 C271.1000,27.999 294.489,30.746 297.1000,4.999 " />
+              <path fill-rule="evenodd" fill="rgb(44, 44, 44)"
+                d="M3.500,109.999 C5.433,109.999 6.1000,111.566 6.1000,113.499 C6.1000,115.432 5.433,116.998 3.500,116.998 C1.567,116.998 -0.000,115.432 -0.000,113.499 C-0.000,111.566 1.567,109.999 3.500,109.999 Z" />
+              <path fill-rule="evenodd" fill="rgb(44, 44, 44)"
+                d="M85.500,25.999 C87.433,25.999 88.1000,27.565 88.1000,29.499 C88.1000,31.432 87.433,32.999 85.500,32.999 C83.567,32.999 81.1000,31.432 81.1000,29.499 C81.1000,27.565 83.567,25.999 85.500,25.999 Z" />
+              <path fill-rule="evenodd" fill="rgb(44, 44, 44)"
+                d="M298.500,-0.001 C300.433,-0.001 301.1000,1.566 301.1000,3.499 C301.1000,5.432 300.433,6.999 298.500,6.999 C296.567,6.999 294.1000,5.432 294.1000,3.499 C294.1000,1.566 296.567,-0.001 298.500,-0.001 Z" />
+            </svg>
+            <ul class="hero__details-list">
+              <li class="hero__detail-item">
+                <p class="hero__item-text">Дата</p>
+                <p class="hero__item-text">17-24 ноября 2020</p>
+              </li>
+              <li class="hero__detail-item">
+                <p class="hero__item-text">Стоимость</p>
+                <p class="hero__item-text">1700 $</p>
+              </li>
+              <li class="hero__detail-item">
+                <p class="hero__item-text">Осталось мест</p>
+                <p class="hero__item-text">7 мест</p>
+              </li>
+            </ul>
           </div>
-        </a>
-        <div class="hero__image"></div>
-        <div class="hero__details">
-          <svg class="hero__curve" xmlns="http://www.w3.org/2000/svg" width="302.5px" height="117.5px">
-            <path fill-rule="evenodd" stroke="rgb(44, 44, 44)" stroke-width="1px" stroke-dasharray="7, 7"
-              stroke-linecap="butt" stroke-linejoin="miter" fill="none"
-              d="M6.000,105.999 C6.000,105.999 32.989,37.246 70.1000,34.999 C70.1000,34.999 132.489,8.746 151.1000,28.999 C151.1000,28.999 164.1000,36.746 171.000,57.999 C171.000,57.999 174.989,75.245 189.1000,81.999 C189.1000,81.999 259.989,125.746 241.1000,38.999 C241.1000,38.999 233.989,15.746 271.1000,27.999 C271.1000,27.999 294.489,30.746 297.1000,4.999 " />
-            <path fill-rule="evenodd" fill="rgb(44, 44, 44)"
-              d="M3.500,109.999 C5.433,109.999 6.1000,111.566 6.1000,113.499 C6.1000,115.432 5.433,116.998 3.500,116.998 C1.567,116.998 -0.000,115.432 -0.000,113.499 C-0.000,111.566 1.567,109.999 3.500,109.999 Z" />
-            <path fill-rule="evenodd" fill="rgb(44, 44, 44)"
-              d="M85.500,25.999 C87.433,25.999 88.1000,27.565 88.1000,29.499 C88.1000,31.432 87.433,32.999 85.500,32.999 C83.567,32.999 81.1000,31.432 81.1000,29.499 C81.1000,27.565 83.567,25.999 85.500,25.999 Z" />
-            <path fill-rule="evenodd" fill="rgb(44, 44, 44)"
-              d="M298.500,-0.001 C300.433,-0.001 301.1000,1.566 301.1000,3.499 C301.1000,5.432 300.433,6.999 298.500,6.999 C296.567,6.999 294.1000,5.432 294.1000,3.499 C294.1000,1.566 296.567,-0.001 298.500,-0.001 Z" />
-          </svg>
-          <ul class="hero__details-list">
-            <li class="hero__detail-item">
-              <p class="hero__item-text">Дата</p>
-              <p class="hero__item-text">17-24 ноября 2020</p>
+        </div>
+      </section>
+
+      <section id="about" class="about wow animate__backInRight">
+        <div class="container about__container">
+          <h2 class="about__title">Страна льда и огня</h2>
+          <p class="about__text">
+            Исландия – это изолированный остров на краю Европы, поражающий невероятными контрастами: кипящие гейзеры и
+            тысячелетние ледники, активные вулканы и ревущие водопады, скалистые фьорды и живописные национальные
+            парки.
+            Исландии есть чем удивить даже самого бывалого туриста.
+          </p>
+          <div class="about__media">
+            <img class="about__image" src="images/fire-and-ice.jpg" alt="Лава">
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="container">
+          <h2 class="advantages__title">Почему вы захотите&nbsp;поехать в тур именно с нами</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__item-title">Крутая команда</h3>
+              <p class="advantages__item-text">В каждый тур едет сопровождающий и фотограф, а в каждом городе тебя
+                ждёт локальный эксперт&nbsp;крутых мест
+              </p>
             </li>
-            <li class="hero__detail-item">
-              <p class="hero__item-text">Стоимость</p>
-              <p class="hero__item-text">1700 $</p>
+            <li class="advantages__item">
+              <h3 class="advantages__item-title">Свобода действий </h3>
+              <p class="advantages__item-text">Выбирай только те активности, которые нравятся и наслаждайся свободным
+                временем в каждой точке маршрута
+              </p>
             </li>
-            <li class="hero__detail-item">
-              <p class="hero__item-text">Осталось мест</p>
-              <p class="hero__item-text">7 мест</p>
+            <li class="advantages__item">
+              <h3 class="advantages__item-title">Транспорт</h3>
+              <p class="advantages__item-text">Мы арендуем 2-3 комфортных внедорожника на которых можно добраться до
+                труднодоступных и невероятно
+                красивых мест</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__item-title">Проживание</h3>
+              <p class="advantages__item-text">Вы будете располагаться в комфортном коттеджном комплексе на западе
+                острова, включающим 12 уютных
+                дизайнерских домиков</p>
             </li>
           </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="about" class="about wow animate__backInRight">
-      <div class="container about__container">
-        <h2 class="about__title">Страна льда и огня</h2>
-        <p class="about__text">
-          Исландия – это изолированный остров на краю Европы, поражающий невероятными контрастами: кипящие гейзеры и
-          тысячелетние ледники, активные вулканы и ревущие водопады, скалистые фьорды и живописные национальные
-          парки.
-          Исландии есть чем удивить даже самого бывалого туриста.
-        </p>
-        <div class="about__media">
-          <img class="about__image" src="images/fire-and-ice.jpg" alt="Лава">
-        </div>
-      </div>
-    </section>
-
-    <section class="advantages">
-      <div class="container">
-        <h2 class="advantages__title">Почему вы захотите&nbsp;поехать в тур именно с нами</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__item-title">Крутая команда</h3>
-            <p class="advantages__item-text">В каждый тур едет сопровождающий и фотограф, а в каждом городе тебя
-              ждёт локальный эксперт&nbsp;крутых мест
-            </p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__item-title">Свобода действий </h3>
-            <p class="advantages__item-text">Выбирай только те активности, которые нравятся и наслаждайся свободным
-              временем в каждой точке маршрута
-            </p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__item-title">Транспорт</h3>
-            <p class="advantages__item-text">Мы арендуем 2-3 комфортных внедорожника на которых можно добраться до
-              труднодоступных и невероятно
-              красивых мест</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__item-title">Проживание</h3>
-            <p class="advantages__item-text">Вы будете располагаться в комфортном коттеджном комплексе на западе
-              острова, включающим 12 уютных
-              дизайнерских домиков</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="places wow animate__backInLeft">
-      <div class="container">
-        <h2 class="places__title">Уникальные места Исландии</h2>
-        <div class="places__item">
-          <div class="places__info">
-            <h3 class="places__info-title">Голубая Лагуна</h3>
-            <p class="places__info-text">Один из самых известных и популярных термальных источников Исландии, который
-              располагается в 40&nbsp;км от города Рейкьявик.</p>
-            <div class="places__info-media">
-              <img class="places__info-image" src="images/blue-lagoon.jpg" alt="Голубая Лагуна">
+      <section class="places wow animate__backInLeft">
+        <div class="container">
+          <h2 class="places__title">Уникальные места Исландии</h2>
+          <div class="places__item">
+            <div class="places__info">
+              <h3 class="places__info-title">Голубая Лагуна</h3>
+              <p class="places__info-text">Один из самых известных и популярных термальных источников Исландии, который
+                располагается в 40&nbsp;км от города Рейкьявик.</p>
+              <div class="places__info-media">
+                <img class="places__info-image" src="images/blue-lagoon.jpg" alt="Голубая Лагуна">
+              </div>
             </div>
-          </div>
-          <div class="places__map">
-            <img class="places__map-image" src="images/iceland-map.png" alt="Карта Исландии">
-            <p class="places__map-name">Исландия</p>
-            <div class="places__map-course">
-              <svg class="places__map-path" xmlns="http://www.w3.org/2000/svg" width="111.5px" height="184.5px">
-                <path fill-rule="evenodd" stroke="rgb(0, 0, 0)" stroke-width="1px" stroke-dasharray="7, 7"
-                  stroke-linecap="butt" stroke-linejoin="miter" fill="none"
-                  d="M1.500,1.499 C1.500,1.499 20.605,41.537 52.500,38.500 C83.928,35.506 77.090,12.010 66.433,17.633 C26.892,38.494 57.349,74.928 62.500,80.499 C67.651,86.071 88.015,102.595 66.500,113.499 C44.985,124.404 20.015,99.594 16.500,123.499 C12.985,147.404 42.348,140.595 46.500,174.499 C50.651,208.404 117.583,133.342 94.596,139.091 C63.300,146.919 81.565,174.091 110.500,178.499 " />
-              </svg>
-              <div class="places__map-path-item">1</div>
-              <div class="places__map-path-item">2</div>
-              <div class="places__map-path-item">3</div>
-              <div class="places__map-path-item places__map-path-item_active">4</div>
-              <div class="places__map-path-item">5</div>
+            <div class="places__map">
+              <img class="places__map-image" src="images/iceland-map.png" alt="Карта Исландии">
+              <p class="places__map-name">Исландия</p>
+              <div class="places__map-course">
+                <svg class="places__map-path" xmlns="http://www.w3.org/2000/svg" width="111.5px" height="184.5px">
+                  <path fill-rule="evenodd" stroke="rgb(0, 0, 0)" stroke-width="1px" stroke-dasharray="7, 7"
+                    stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                    d="M1.500,1.499 C1.500,1.499 20.605,41.537 52.500,38.500 C83.928,35.506 77.090,12.010 66.433,17.633 C26.892,38.494 57.349,74.928 62.500,80.499 C67.651,86.071 88.015,102.595 66.500,113.499 C44.985,124.404 20.015,99.594 16.500,123.499 C12.985,147.404 42.348,140.595 46.500,174.499 C50.651,208.404 117.583,133.342 94.596,139.091 C63.300,146.919 81.565,174.091 110.500,178.499 " />
+                </svg>
+                <div class="places__map-path-item">1</div>
+                <div class="places__map-path-item">2</div>
+                <div class="places__map-path-item">3</div>
+                <div class="places__map-path-item places__map-path-item_active">4</div>
+                <div class="places__map-path-item">5</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="video" class="video">
-      <div class="video__container">
-        <iframe id="video-player" class="video__player" width="560" height="315"
-          src="https://www.youtube.com/embed/Pbzn79TSRO0?si=Lh6Wj-gSuTKN2aJi" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <a id="video-play-action" class="video__play-action" href="#">
-          <div class="play-btn play-btn_big">
-            <div class="play-btn__icon play-btn__icon_big"></div>
-            <p class="play-btn__info play-btn__info_big">Посмотрите видео путешествия 2019 года</p>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section id="program" class="program wow animate__bounceIn">
-      <div class="container">
-        <h2 class="program__title">Программа тура</h2>
-        <div class="program__slider">
-          <div class="program__tour">
-            <div class="program__tour-media">
-              <img class="program__tour-image" src="images/program/reykjavik.jpg" alt="Рейкьявик">
+      <section id="video" class="video">
+        <div class="video__container">
+          <!-- <iframe id="video-player" class="video__player" width="560" height="315"
+            src="https://www.youtube.com/embed/Pbzn79TSRO0?si=Lh6Wj-gSuTKN2aJi" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+          <a id="video-play-action" class="video__play-action" href="#">
+            <div class="play-btn play-btn_big">
+              <div class="play-btn__icon play-btn__icon_big"></div>
+              <p class="play-btn__info play-btn__info_big">Посмотрите видео путешествия 2019 года</p>
             </div>
-            <h3 class="program__tour-day">День 1 <span class="program__tour-total-day">/ 7</span></h3>
-            <h4 class="program__tour-title">Прибытие в Рейкьявик</h4>
-            <p class="program__tour-text">Трансфер из аэропорта в Рейкьявик осуществляется самостоятельно. Также
-              возможна организация индивидуального трансфера.
-              Если у Вас ранний рейс, то рекомендуем Вам провести день в центре Рейкьявика и исследовать его старый порт
-              с интересными ресторанами, сувенирными магазинами и музеями.
-              Самостоятельная организация ужина. Рейкьявик предлагает своим гостям множество ресторанов и/или кафе,
-              благодаря чему самостоятельная организация ужина является отличным способом узнать столицу Исландии
-              получше.
-              Ночь в отеле в Рейкьявике.</p>
-            <div class="program__actions">
-              <button class="slider-btn slider-btn_prev">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
-                    fill="white" />
-                </svg>
-              </button>
-              <button class="slider-btn slider-btn_next">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
-                    fill="white" />
-                </svg>
-              </button>
-            </div>
-            <a class="download-link program__download-link" href="#">
-              <svg class="download-link__icon" height="18" width="18" viewBox="0 0 512 512"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m256 362.667969c-8.832031 0-16-7.167969-16-16v-330.667969c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v330.667969c0 8.832031-7.167969 16-16 16zm0 0" />
-                <path
-                  d="m256 362.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-85.332031-85.332031c-6.25-6.25-6.25-16.382813 0-22.636719 6.25-6.25 16.382813-6.25 22.636719 0l74.023437 74.027344 74.027344-74.027344c6.25-6.25 16.386719-6.25 22.636719 0 6.25 6.253906 6.25 16.386719 0 22.636719l-85.335938 85.332031c-3.15625 3.136719-7.25 4.695313-11.347656 4.695313zm0 0" />
-                <path
-                  d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 32.363281-26.304688 58.667969-58.667969 58.667969zm0 0" />
-              </svg>
-              <p class="download-link__text">Скачать программу тура</p>
-            </a>
-          </div>
-
-          <div class="program__tour">
-            <div class="program__tour-media">
-              <img class="program__tour-image" src="images/program/borgar.jpg" alt="Боргарфьордюр">
-            </div>
-            <h3 class="program__tour-day">День 2 <span class="program__tour-total-day">/ 7</span></h3>
-            <h4 class="program__tour-title">Лавовые водопады — Захватывающие саги и история викингов — Красочная Столица
-              Севера</h4>
-            <p class="program__tour-text">Сегодня Вы будто бы отправитесь в прошлое и откроете для себя уникальную и
-              полную приключений историю Исландии. Сначала Вы посетите Боргарфьордюр.
-              Затем город Рейкхольт.
-              И завершите день северной столице Исландии — городе Акурейри.</p>
-            <div class="program__actions">
-              <button class="slider-btn slider-btn_prev">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
-                    fill="white" />
-                </svg>
-              </button>
-              <button class="slider-btn slider-btn_next">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
-                    fill="white" />
-                </svg>
-              </button>
-            </div>
-            <a class="download-link program__download-link" href="#">
-              <svg class="download-link__icon" height="18" width="18" viewBox="0 0 512 512"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m256 362.667969c-8.832031 0-16-7.167969-16-16v-330.667969c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v330.667969c0 8.832031-7.167969 16-16 16zm0 0" />
-                <path
-                  d="m256 362.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-85.332031-85.332031c-6.25-6.25-6.25-16.382813 0-22.636719 6.25-6.25 16.382813-6.25 22.636719 0l74.023437 74.027344 74.027344-74.027344c6.25-6.25 16.386719-6.25 22.636719 0 6.25 6.253906 6.25 16.386719 0 22.636719l-85.335938 85.332031c-3.15625 3.136719-7.25 4.695313-11.347656 4.695313zm0 0" />
-                <path
-                  d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 32.363281-26.304688 58.667969-58.667969 58.667969zm0 0" />
-              </svg>
-              <p class="download-link__text">Скачать программу тура</p>
-            </a>
-          </div>
-
-          <div class="program__tour">
-            <div class="program__tour-media">
-              <img class="program__tour-image" src="images/program/sheep.jpg" alt="Исландские овечки">
-            </div>
-            <h3 class="program__tour-day">День 3 <span class="program__tour-total-day">/ 7</span></h3>
-            <h4 class="program__tour-title">Познакомимся с исландскими овечками</h4>
-            <p class="program__tour-text">Мы отправимся в путешествие по одному из самых необычных туристических
-              маршрутов Исландии — Золотому
-              кольцу.
-              Овeчки будут вaшими пocтoянными
-              cпутникaми. Ha пoляx и в кeмпингax, в гopныx дoлинax и пpямo пocpeди тpacc — кудa бы вы ни пoexaли, вaм
-              будут
-              вcтpeчaтьcя бpoдящиe caми пo ceбe oвeчки c
-              бapaшкaми.</p>
-            <div class="program__actions">
-              <button class="slider-btn slider-btn_prev">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
-                    fill="white" />
-                </svg>
-              </button>
-              <button class="slider-btn slider-btn_next">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
-                    fill="white" />
-                </svg>
-              </button>
-            </div>
-            <a class="download-link program__download-link" href="#">
-              <svg class="download-link__icon" height="18" width="18" viewBox="0 0 512 512"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m256 362.667969c-8.832031 0-16-7.167969-16-16v-330.667969c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v330.667969c0 8.832031-7.167969 16-16 16zm0 0" />
-                <path
-                  d="m256 362.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-85.332031-85.332031c-6.25-6.25-6.25-16.382813 0-22.636719 6.25-6.25 16.382813-6.25 22.636719 0l74.023437 74.027344 74.027344-74.027344c6.25-6.25 16.386719-6.25 22.636719 0 6.25 6.253906 6.25 16.386719 0 22.636719l-85.335938 85.332031c-3.15625 3.136719-7.25 4.695313-11.347656 4.695313zm0 0" />
-                <path
-                  d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 32.363281-26.304688 58.667969-58.667969 58.667969zm0 0" />
-              </svg>
-              <p class="download-link__text">Скачать программу тура</p>
-            </a>
-          </div>
-
-          <div class="program__tour">
-            <div class="program__tour-media">
-              <img class="program__tour-image" src="images/program/asbyrgi.jpg" alt="Каньон Аусбирги">
-            </div>
-            <h3 class="program__tour-day">День 4 <span class="program__tour-total-day">/ 7</span></h3>
-            <h4 class="program__tour-title">Величественный каньон — Самый большой водопад в Европе — Безграничное
-              высокогорье</h4>
-            <p class="program__tour-text">Посетите заповедник Аусбирги (Asbyrgi) — удивительный каньон, по форме
-              напоминающий подкову.
-              Следующей остановкой будет могущественный водопад Деттифосс (Dettifoss), который является самым большим
-              водопадом в Европею.
-              Далее Вы отправитесь в Восточную Исландию, пересекая впечатляющие просторы необитаемой «пустыни»
-              Модрудалсораеви (Modrudalsoraefi).
-              В конце дня Вы приедете в район самого большого леса Исландии — Халлормсстадир (Hallormsstadir), недалеко
-              от которого находится город Эйильстадир (Egilsstadir), в котором Вы остановитесь на ночь.</p>
-            <div class="program__actions">
-              <button class="slider-btn slider-btn_prev">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
-                    fill="white" />
-                </svg>
-              </button>
-              <button class="slider-btn slider-btn_next">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
-                    fill="white" />
-                </svg>
-              </button>
-            </div>
-            <a class="download-link program__download-link" href="#">
-              <svg class="download-link__icon" height="18" width="18" viewBox="0 0 512 512"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m256 362.667969c-8.832031 0-16-7.167969-16-16v-330.667969c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v330.667969c0 8.832031-7.167969 16-16 16zm0 0" />
-                <path
-                  d="m256 362.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-85.332031-85.332031c-6.25-6.25-6.25-16.382813 0-22.636719 6.25-6.25 16.382813-6.25 22.636719 0l74.023437 74.027344 74.027344-74.027344c6.25-6.25 16.386719-6.25 22.636719 0 6.25 6.253906 6.25 16.386719 0 22.636719l-85.335938 85.332031c-3.15625 3.136719-7.25 4.695313-11.347656 4.695313zm0 0" />
-                <path
-                  d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 32.363281-26.304688 58.667969-58.667969 58.667969zm0 0" />
-              </svg>
-              <p class="download-link__text">Скачать программу тура</p>
-            </a>
-          </div>
-
-          <div class="program__tour">
-            <div class="program__tour-media">
-              <img class="program__tour-image" src="images/program/fjord.jpg" alt="Фьорд">
-            </div>
-            <h3 class="program__tour-day">День 5 <span class="program__tour-total-day">/ 7</span></h3>
-            <h4 class="program__tour-title">Захватывающие фьорды — Древние камни и минералы — Местная пивоварня</h4>
-            <p class="program__tour-text">Отправитесь в путешествие через Восточные фьорды Исландии, которые являются
-              одним из старейших геологических районов острова. Насладитесь видами высоких гор и бесконечного побережья.
-            </p>
-            <div class="program__actions">
-              <button class="slider-btn slider-btn_prev">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
-                    fill="white" />
-                </svg>
-              </button>
-              <button class="slider-btn slider-btn_next">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
-                    fill="white" />
-                </svg>
-              </button>
-            </div>
-            <a class="download-link program__download-link" href="#">
-              <svg class="download-link__icon" height="18" width="18" viewBox="0 0 512 512"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m256 362.667969c-8.832031 0-16-7.167969-16-16v-330.667969c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v330.667969c0 8.832031-7.167969 16-16 16zm0 0" />
-                <path
-                  d="m256 362.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-85.332031-85.332031c-6.25-6.25-6.25-16.382813 0-22.636719 6.25-6.25 16.382813-6.25 22.636719 0l74.023437 74.027344 74.027344-74.027344c6.25-6.25 16.386719-6.25 22.636719 0 6.25 6.253906 6.25 16.386719 0 22.636719l-85.335938 85.332031c-3.15625 3.136719-7.25 4.695313-11.347656 4.695313zm0 0" />
-                <path
-                  d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 32.363281-26.304688 58.667969-58.667969 58.667969zm0 0" />
-              </svg>
-              <p class="download-link__text">Скачать программу тура</p>
-            </a>
-          </div>
-
-          <div class="program__tour">
-            <div class="program__tour-media">
-              <img class="program__tour-image" src="images/program/vatna.jpg" alt="Фьорд">
-            </div>
-            <h3 class="program__tour-day">День 6 <span class="program__tour-total-day">/ 7</span></h3>
-            <h4 class="program__tour-title">Национальный Парк Ватнайёкюдль — Великолепная ледниковая лагуна —
-              Захватывающие водопады и южное побережье</h4>
-            <p class="program__tour-text">Исследуете южную часть Национального Парка Ватнайёкюдль. Остановитесь в
-              Скафтафетль (Skaftafell) — потрясающий зеленый оазис, окруженный вулканами и ледниками. Далее Вы
-              пропутешествуете через пустынную местность Скейдарарсандур (Skeidararsandur), которая образовалась за счет
-              наводнения ледниковыми водами. Насладитесь видами впечатляющих размеров лавового поля Эльдхрёйн
-              (Eldhraun).
-              Далее посетите маленькую деревню Вик и близлежащий пляж с черным песком и гремучими волнами — Рейнисфьяра
-              (Reynisfjara). Также посетите невероятной красоты водопады Сельяландфосс (Seljalandsfoss) и Скогафосс
-              (Skogafoss).
-            </p>
-            <div class="program__actions">
-              <button class="slider-btn slider-btn_prev">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
-                    fill="white" />
-                </svg>
-              </button>
-              <button class="slider-btn slider-btn_next">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
-                    fill="white" />
-                </svg>
-              </button>
-            </div>
-            <a class="download-link program__download-link" href="#">
-              <svg class="download-link__icon" height="18" width="18" viewBox="0 0 512 512"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m256 362.667969c-8.832031 0-16-7.167969-16-16v-330.667969c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v330.667969c0 8.832031-7.167969 16-16 16zm0 0" />
-                <path
-                  d="m256 362.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-85.332031-85.332031c-6.25-6.25-6.25-16.382813 0-22.636719 6.25-6.25 16.382813-6.25 22.636719 0l74.023437 74.027344 74.027344-74.027344c6.25-6.25 16.386719-6.25 22.636719 0 6.25 6.253906 6.25 16.386719 0 22.636719l-85.335938 85.332031c-3.15625 3.136719-7.25 4.695313-11.347656 4.695313zm0 0" />
-                <path
-                  d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 32.363281-26.304688 58.667969-58.667969 58.667969zm0 0" />
-              </svg>
-              <p class="download-link__text">Скачать программу тура</p>
-            </a>
-          </div>
-
-          <div class="program__tour">
-            <div class="program__tour-media">
-              <img class="program__tour-image" src="images/program/gullfoss.jpg" alt="Фьорд">
-            </div>
-            <h3 class="program__tour-day">День 7 <span class="program__tour-total-day">/ 7</span></h3>
-            <h4 class="program__tour-title">Гейзер — Исторический национальный парк</h4>
-            <p class="program__tour-text">Отправьтесь к водопаду Гюдльфосс (Gullfoss), который считается самым красивым
-              водопадом в Исландии. Рядом с ним находится горячий источник Гейзер (Geysir). Самый известный гейзер —
-              Строккур, но в этой местности также много интересных маленьких гейзеров и бурлящих горячих источников.
-              Посетите национальный парк Тингведлир (Thingvellir National Park), находящийся на берегу самого большого
-              озера Исландии. В этом парке Вы также можете увидеть разлом тектонических плит. Не упустите уникальную
-              возможность прогуляться между континентами.
-              Далее Вы последуете через полуостров Рейкьянес, где находится всемирно известная Голубая Лагуна (Blue
-              Lagoon).
-              Завершением Ваших приключений в Исландии станет Рейкьявик, где Вы проведете последнюю в этом путешествии
-              ночь.
-            </p>
-            <div class="program__actions">
-              <button class="slider-btn slider-btn_prev">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
-                    fill="white" />
-                </svg>
-              </button>
-              <button class="slider-btn slider-btn_next">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
-                    fill="white" />
-                </svg>
-              </button>
-            </div>
-            <a class="download-link program__download-link" href="#">
-              <svg class="download-link__icon" height="18" width="18" viewBox="0 0 512 512"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m256 362.667969c-8.832031 0-16-7.167969-16-16v-330.667969c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v330.667969c0 8.832031-7.167969 16-16 16zm0 0" />
-                <path
-                  d="m256 362.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-85.332031-85.332031c-6.25-6.25-6.25-16.382813 0-22.636719 6.25-6.25 16.382813-6.25 22.636719 0l74.023437 74.027344 74.027344-74.027344c6.25-6.25 16.386719-6.25 22.636719 0 6.25 6.253906 6.25 16.386719 0 22.636719l-85.335938 85.332031c-3.15625 3.136719-7.25 4.695313-11.347656 4.695313zm0 0" />
-                <path
-                  d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 32.363281-26.304688 58.667969-58.667969 58.667969zm0 0" />
-              </svg>
-              <p class="download-link__text">Скачать программу тура</p>
-            </a>
-          </div>
-
+          </a>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="reviews" class="reviews wow animate__swing">
-      <div class="container">
-        <h2 class="reviews__title">Отзывы</h2>
-        <div class="review__slider">
-
-          <div class="review-card">
-            <h3 class="review-card__name">Иван</h3>
-            <p class="review-card__rating">10/10</p>
-            <p class="review-card__text">Хочу сказать организаторам тура огромное спасибо за это шикарное путешествие!
-              Мы с
-              девушкой давно мечтали
-              побывать в Исландии и благодаря ребятам из iceland.travel эта страна оставила невероятные впечатления
-              далёкого, но теперь изведанного края, которые мы запомним надолго!</p>
-            <div class="review-card__media">
-              <img class="review-card__image" src="images/clients/client-1.jpg" alt="Клиент 1">
-            </div>
-            <div class="review-card__actions">
-              <button class="slider-btn slider-btn_prev review-card__slider-btn">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <section id="program" class="program wow animate__bounceIn">
+        <div class="container">
+          <h2 class="program__title">Программа тура</h2>
+          <div class="program__slider">
+            <div class="program__tour">
+              <div class="program__tour-media">
+                <img class="program__tour-image" src="images/program/reykjavik.jpg" alt="Рейкьявик">
+              </div>
+              <p class="program__tour-day">День 1 <span class="program__tour-total-day">/ 7</span></p>
+              <h3 class="program__tour-title">Прибытие в Рейкьявик</h3>
+              <p class="program__tour-text">Трансфер из аэропорта в Рейкьявик осуществляется самостоятельно. Также
+                возможна организация индивидуального трансфера.
+                Если у Вас ранний рейс, то рекомендуем Вам провести день в центре Рейкьявика и исследовать его старый
+                порт
+                с интересными ресторанами, сувенирными магазинами и музеями.
+                Самостоятельная организация ужина. Рейкьявик предлагает своим гостям множество ресторанов и/или кафе,
+                благодаря чему самостоятельная организация ужина является отличным способом узнать столицу Исландии
+                получше.
+                Ночь в отеле в Рейкьявике.</p>
+              <div class="program__actions">
+                <button class="slider-btn slider-btn_prev">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+                <button class="slider-btn slider-btn_next">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+              <a class="download-link program__download-link" href="#">
+                <svg class="download-link__icon" height="18" width="18" viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
-                    d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
-                    fill="white" />
-                </svg>
-              </button>
-              <button class="slider-btn slider-btn_next review-card__slider-btn">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    d="m256 362.667969c-8.832031 0-16-7.167969-16-16v-330.667969c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v330.667969c0 8.832031-7.167969 16-16 16zm0 0" />
                   <path
-                    d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
-                    fill="white" />
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <div class="review-card">
-            <h3 class="review-card__name">Алексей</h3>
-            <p class="review-card__rating">10/10</p>
-            <p class="review-card__text">Тур в Исландию от iceland.travel превзошел все ожидания! Восхитительные
-              водопады,
-              гейзеры и невероятные ледники – это что-то невероятное. Гиды были профессиональны и доброжелательны,
-              маршруты продуманы до мелочей. Особенно впечатлило северное сияние, которое мы увидели благодаря отличной
-              организации тура. Обязательно вернемся еще раз!</p>
-            <div class="review-card__media">
-              <img class="review-card__image" src="images/clients/client-2.jpg" alt="Клиент 2">
-            </div>
-            <div class="review-card__actions">
-              <button class="slider-btn slider-btn_prev review-card__slider-btn">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    d="m256 362.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-85.332031-85.332031c-6.25-6.25-6.25-16.382813 0-22.636719 6.25-6.25 16.382813-6.25 22.636719 0l74.023437 74.027344 74.027344-74.027344c6.25-6.25 16.386719-6.25 22.636719 0 6.25 6.253906 6.25 16.386719 0 22.636719l-85.335938 85.332031c-3.15625 3.136719-7.25 4.695313-11.347656 4.695313zm0 0" />
                   <path
-                    d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
-                    fill="white" />
+                    d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 32.363281-26.304688 58.667969-58.667969 58.667969zm0 0" />
                 </svg>
-              </button>
-              <button class="slider-btn slider-btn_next review-card__slider-btn">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
-                    fill="white" />
-                </svg>
-              </button>
+                <p class="download-link__text">Скачать программу тура</p>
+              </a>
             </div>
-          </div>
 
-          <div class="review-card">
-            <h3 class="review-card__name">Елена</h3>
-            <p class="review-card__rating">8/10</p>
-            <p class="review-card__text">Путешествие с iceland.travel было замечательным. Природа Исландии просто
-              завораживает, особенно водопад Гюдльфосс и вулканическое побережье. Гиды были профессиональны, автобусы
-              комфортны. Единственный минус – немного спешный график, хотелось бы больше времени на осмотр
-              достопримечательностей. В целом, остались довольны и рекомендуем этот тур!</p>
-            <div class="review-card__media">
-              <img class="review-card__image" src="images/clients/client-3.jpg" alt="Клиент 1">
-            </div>
-            <div class="review-card__actions">
-              <button class="slider-btn slider-btn_prev review-card__slider-btn">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="program__tour">
+              <div class="program__tour-media">
+                <img class="program__tour-image" src="images/program/borgar.jpg" alt="Боргарфьордюр">
+              </div>
+              <p class="program__tour-day">День 2 <span class="program__tour-total-day">/ 7</span></p>
+              <h3 class="program__tour-title">Лавовые водопады — Захватывающие саги и история викингов — Красочная
+                Столица
+                Севера</h3>
+              <p class="program__tour-text">Сегодня Вы будто бы отправитесь в прошлое и откроете для себя уникальную и
+                полную приключений историю Исландии. Сначала Вы посетите Боргарфьордюр.
+                Затем город Рейкхольт.
+                И завершите день северной столице Исландии — городе Акурейри.</p>
+              <div class="program__actions">
+                <button class="slider-btn slider-btn_prev">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+                <button class="slider-btn slider-btn_next">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+              <a class="download-link program__download-link" href="#">
+                <svg class="download-link__icon" height="18" width="18" viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
-                    d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
-                    fill="white" />
-                </svg>
-              </button>
-              <button class="slider-btn slider-btn_next review-card__slider-btn">
-                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    d="m256 362.667969c-8.832031 0-16-7.167969-16-16v-330.667969c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v330.667969c0 8.832031-7.167969 16-16 16zm0 0" />
                   <path
-                    d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
-                    fill="white" />
+                    d="m256 362.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-85.332031-85.332031c-6.25-6.25-6.25-16.382813 0-22.636719 6.25-6.25 16.382813-6.25 22.636719 0l74.023437 74.027344 74.027344-74.027344c6.25-6.25 16.386719-6.25 22.636719 0 6.25 6.253906 6.25 16.386719 0 22.636719l-85.335938 85.332031c-3.15625 3.136719-7.25 4.695313-11.347656 4.695313zm0 0" />
+                  <path
+                    d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 32.363281-26.304688 58.667969-58.667969 58.667969zm0 0" />
                 </svg>
-              </button>
+                <p class="download-link__text">Скачать программу тура</p>
+              </a>
             </div>
-          </div>
 
-        </div>
-      </div>
-    </section>
+            <div class="program__tour">
+              <div class="program__tour-media">
+                <img class="program__tour-image" src="images/program/sheep.jpg" alt="Исландские овечки">
+              </div>
+              <p class="program__tour-day">День 3 <span class="program__tour-total-day">/ 7</span></p>
+              <h3 class="program__tour-title">Познакомимся с исландскими овечками</h3>
+              <p class="program__tour-text">Мы отправимся в путешествие по одному из самых необычных туристических
+                маршрутов Исландии — Золотому
+                кольцу.
+                Овeчки будут вaшими пocтoянными
+                cпутникaми. Ha пoляx и в кeмпингax, в гopныx дoлинax и пpямo пocpeди тpacc — кудa бы вы ни пoexaли, вaм
+                будут
+                вcтpeчaтьcя бpoдящиe caми пo ceбe oвeчки c
+                бapaшкaми.</p>
+              <div class="program__actions">
+                <button class="slider-btn slider-btn_prev">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+                <button class="slider-btn slider-btn_next">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+              <a class="download-link program__download-link" href="#">
+                <svg class="download-link__icon" height="18" width="18" viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m256 362.667969c-8.832031 0-16-7.167969-16-16v-330.667969c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v330.667969c0 8.832031-7.167969 16-16 16zm0 0" />
+                  <path
+                    d="m256 362.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-85.332031-85.332031c-6.25-6.25-6.25-16.382813 0-22.636719 6.25-6.25 16.382813-6.25 22.636719 0l74.023437 74.027344 74.027344-74.027344c6.25-6.25 16.386719-6.25 22.636719 0 6.25 6.253906 6.25 16.386719 0 22.636719l-85.335938 85.332031c-3.15625 3.136719-7.25 4.695313-11.347656 4.695313zm0 0" />
+                  <path
+                    d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 32.363281-26.304688 58.667969-58.667969 58.667969zm0 0" />
+                </svg>
+                <p class="download-link__text">Скачать программу тура</p>
+              </a>
+            </div>
 
-    <section id="gallery" class="gallery wow animate__zoomIn">
-      <div class="container">
-        <h2 class="gallery__title">Фотогалерея</h2>
-        <div class="owl-carousel owl-theme gallery__multiple">
+            <div class="program__tour">
+              <div class="program__tour-media">
+                <img class="program__tour-image" src="images/program/asbyrgi.jpg" alt="Каньон Аусбирги">
+              </div>
+              <p class="program__tour-day">День 4 <span class="program__tour-total-day">/ 7</span></p>
+              <h3 class="program__tour-title">Величественный каньон — Самый большой водопад в Европе — Безграничное
+                высокогорье</h3>
+              <p class="program__tour-text">Посетите заповедник Аусбирги (Asbyrgi) — удивительный каньон, по форме
+                напоминающий подкову.
+                Следующей остановкой будет могущественный водопад Деттифосс (Dettifoss), который является самым большим
+                водопадом в Европею.
+                Далее Вы отправитесь в Восточную Исландию, пересекая впечатляющие просторы необитаемой «пустыни»
+                Модрудалсораеви (Modrudalsoraefi).
+                В конце дня Вы приедете в район самого большого леса Исландии — Халлормсстадир (Hallormsstadir),
+                недалеко
+                от которого находится город Эйильстадир (Egilsstadir), в котором Вы остановитесь на ночь.</p>
+              <div class="program__actions">
+                <button class="slider-btn slider-btn_prev">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+                <button class="slider-btn slider-btn_next">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+              <a class="download-link program__download-link" href="#">
+                <svg class="download-link__icon" height="18" width="18" viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m256 362.667969c-8.832031 0-16-7.167969-16-16v-330.667969c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v330.667969c0 8.832031-7.167969 16-16 16zm0 0" />
+                  <path
+                    d="m256 362.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-85.332031-85.332031c-6.25-6.25-6.25-16.382813 0-22.636719 6.25-6.25 16.382813-6.25 22.636719 0l74.023437 74.027344 74.027344-74.027344c6.25-6.25 16.386719-6.25 22.636719 0 6.25 6.253906 6.25 16.386719 0 22.636719l-85.335938 85.332031c-3.15625 3.136719-7.25 4.695313-11.347656 4.695313zm0 0" />
+                  <path
+                    d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 32.363281-26.304688 58.667969-58.667969 58.667969zm0 0" />
+                </svg>
+                <p class="download-link__text">Скачать программу тура</p>
+              </a>
+            </div>
 
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image1.jpg" alt="Лед">
-            <img class="gallery__image" src="images/gallery/image2.jpg" alt="Водопад">
-            <img class="gallery__image" src="images/gallery/image3.jpg" alt="Гора на закате">
-            <img class="gallery__image" src="images/gallery/image4.jpg" alt="Лед, покрытый снегом">
-            <img class="gallery__image" src="images/gallery/image5.jpg" alt="Холмы со снегом">
-          </div>
+            <div class="program__tour">
+              <div class="program__tour-media">
+                <img class="program__tour-image" src="images/program/fjord.jpg" alt="Фьорд">
+              </div>
+              <p class="program__tour-day">День 5 <span class="program__tour-total-day">/ 7</span></p>
+              <h3 class="program__tour-title">Захватывающие фьорды — Древние камни и минералы — Местная пивоварня</h3>
+              <p class="program__tour-text">Отправитесь в путешествие через Восточные фьорды Исландии, которые являются
+                одним из старейших геологических районов острова. Насладитесь видами высоких гор и бесконечного
+                побережья.
+              </p>
+              <div class="program__actions">
+                <button class="slider-btn slider-btn_prev">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+                <button class="slider-btn slider-btn_next">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+              <a class="download-link program__download-link" href="#">
+                <svg class="download-link__icon" height="18" width="18" viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m256 362.667969c-8.832031 0-16-7.167969-16-16v-330.667969c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v330.667969c0 8.832031-7.167969 16-16 16zm0 0" />
+                  <path
+                    d="m256 362.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-85.332031-85.332031c-6.25-6.25-6.25-16.382813 0-22.636719 6.25-6.25 16.382813-6.25 22.636719 0l74.023437 74.027344 74.027344-74.027344c6.25-6.25 16.386719-6.25 22.636719 0 6.25 6.253906 6.25 16.386719 0 22.636719l-85.335938 85.332031c-3.15625 3.136719-7.25 4.695313-11.347656 4.695313zm0 0" />
+                  <path
+                    d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 32.363281-26.304688 58.667969-58.667969 58.667969zm0 0" />
+                </svg>
+                <p class="download-link__text">Скачать программу тура</p>
+              </a>
+            </div>
 
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image6.jpg" alt="Полярное сияние">
-            <img class="gallery__image" src="images/gallery/image7.jpg" alt="Люди на фоне горы">
-            <img class="gallery__image" src="images/gallery/image8.jpg" alt="Гора с водопадом">
-            <img class="gallery__image" src="images/gallery/image9.jpg" alt="Река в каньоне">
-            <img class="gallery__image" src="images/gallery/image10.jpg" alt="Ледники">
-          </div>
+            <div class="program__tour">
+              <div class="program__tour-media">
+                <img class="program__tour-image" src="images/program/vatna.jpg" alt="Фьорд">
+              </div>
+              <p class="program__tour-day">День 6 <span class="program__tour-total-day">/ 7</span></p>
+              <h3 class="program__tour-title">Национальный Парк Ватнайёкюдль — Великолепная ледниковая лагуна —
+                Захватывающие водопады и южное побережье</h3>
+              <p class="program__tour-text">Исследуете южную часть Национального Парка Ватнайёкюдль. Остановитесь в
+                Скафтафетль (Skaftafell) — потрясающий зеленый оазис, окруженный вулканами и ледниками. Далее Вы
+                пропутешествуете через пустынную местность Скейдарарсандур (Skeidararsandur), которая образовалась за
+                счет
+                наводнения ледниковыми водами. Насладитесь видами впечатляющих размеров лавового поля Эльдхрёйн
+                (Eldhraun).
+                Далее посетите маленькую деревню Вик и близлежащий пляж с черным песком и гремучими волнами —
+                Рейнисфьяра
+                (Reynisfjara). Также посетите невероятной красоты водопады Сельяландфосс (Seljalandsfoss) и Скогафосс
+                (Skogafoss).
+              </p>
+              <div class="program__actions">
+                <button class="slider-btn slider-btn_prev">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+                <button class="slider-btn slider-btn_next">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+              <a class="download-link program__download-link" href="#">
+                <svg class="download-link__icon" height="18" width="18" viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m256 362.667969c-8.832031 0-16-7.167969-16-16v-330.667969c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v330.667969c0 8.832031-7.167969 16-16 16zm0 0" />
+                  <path
+                    d="m256 362.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-85.332031-85.332031c-6.25-6.25-6.25-16.382813 0-22.636719 6.25-6.25 16.382813-6.25 22.636719 0l74.023437 74.027344 74.027344-74.027344c6.25-6.25 16.386719-6.25 22.636719 0 6.25 6.253906 6.25 16.386719 0 22.636719l-85.335938 85.332031c-3.15625 3.136719-7.25 4.695313-11.347656 4.695313zm0 0" />
+                  <path
+                    d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 32.363281-26.304688 58.667969-58.667969 58.667969zm0 0" />
+                </svg>
+                <p class="download-link__text">Скачать программу тура</p>
+              </a>
+            </div>
 
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image11.jpg" alt="Ледяная пещера">
-            <img class="gallery__image" src="images/gallery/image12.jpg" alt="Полярное сияние">
-            <img class="gallery__image" src="images/gallery/image13.jpg" alt="Река в каньоне">
-            <img class="gallery__image" src="images/gallery/image14.jpg" alt="SPA Голубая Лагуна">
-            <img class="gallery__image" src="images/gallery/image15.jpg" alt="Ледяная скала">
-          </div>
+            <div class="program__tour">
+              <div class="program__tour-media">
+                <img class="program__tour-image" src="images/program/gullfoss.jpg" alt="Фьорд">
+              </div>
+              <p class="program__tour-day">День 7 <span class="program__tour-total-day">/ 7</span></p>
+              <h3 class="program__tour-title">Гейзер — Исторический национальный парк</h3>
+              <p class="program__tour-text">Отправьтесь к водопаду Гюдльфосс (Gullfoss), который считается самым
+                красивым
+                водопадом в Исландии. Рядом с ним находится горячий источник Гейзер (Geysir). Самый известный гейзер —
+                Строккур, но в этой местности также много интересных маленьких гейзеров и бурлящих горячих источников.
+                Посетите национальный парк Тингведлир (Thingvellir National Park), находящийся на берегу самого большого
+                озера Исландии. В этом парке Вы также можете увидеть разлом тектонических плит. Не упустите уникальную
+                возможность прогуляться между континентами.
+                Далее Вы последуете через полуостров Рейкьянес, где находится всемирно известная Голубая Лагуна (Blue
+                Lagoon).
+                Завершением Ваших приключений в Исландии станет Рейкьявик, где Вы проведете последнюю в этом путешествии
+                ночь.
+              </p>
+              <div class="program__actions">
+                <button class="slider-btn slider-btn_prev">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+                <button class="slider-btn slider-btn_next">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+              <a class="download-link program__download-link" href="#">
+                <svg class="download-link__icon" height="18" width="18" viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m256 362.667969c-8.832031 0-16-7.167969-16-16v-330.667969c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v330.667969c0 8.832031-7.167969 16-16 16zm0 0" />
+                  <path
+                    d="m256 362.667969c-4.097656 0-8.191406-1.558594-11.308594-4.695313l-85.332031-85.332031c-6.25-6.25-6.25-16.382813 0-22.636719 6.25-6.25 16.382813-6.25 22.636719 0l74.023437 74.027344 74.027344-74.027344c6.25-6.25 16.386719-6.25 22.636719 0 6.25 6.253906 6.25 16.386719 0 22.636719l-85.335938 85.332031c-3.15625 3.136719-7.25 4.695313-11.347656 4.695313zm0 0" />
+                  <path
+                    d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 32.363281-26.304688 58.667969-58.667969 58.667969zm0 0" />
+                </svg>
+                <p class="download-link__text">Скачать программу тура</p>
+              </a>
+            </div>
 
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image16.jpg" alt="Озеро на фоне холма">
-            <img class="gallery__image" src="images/gallery/image17.jpg" alt="Водопад">
-            <img class="gallery__image" src="images/gallery/image18.jpg" alt="Горы">
-            <img class="gallery__image" src="images/gallery/image19.jpg" alt="Купальни в каньоне Хусафелл">
-            <img class="gallery__image" src="images/gallery/image20.jpg" alt="Луг и дом">
           </div>
         </div>
+      </section>
 
-        <div class="owl-carousel owl-theme gallery__single">
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image1.jpg" alt="Лед">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image2.jpg" alt="Водопад">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image3.jpg" alt="Гора на закате">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image4.jpg" alt="Лед, покрытый снегом">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image5.jpg" alt="Холмы со снегом">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image6.jpg" alt="Полярное сияние">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image7.jpg" alt="Люди на фоне горы">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image8.jpg" alt="Гора с водопадом">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image9.jpg" alt="Река в каньоне">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image10.jpg" alt="Ледники">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image11.jpg" alt="Ледяная пещера">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image12.jpg" alt="Полярное сияние">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image13.jpg" alt="Река в каньоне">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image14.jpg" alt="SPA Голубая Лагуна">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image15.jpg" alt="Ледяная скала">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image16.jpg" alt="Озеро на фоне холма">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image17.jpg" alt="Водопад">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image18.jpg" alt="Горы">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image19.jpg" alt="Купальни в каньоне Хусафелл">
-          </div>
-          <div class="gallery__slider item">
-            <img class="gallery__image" src="images/gallery/image20.jpg" alt="Луг и дом">
+      <section id="reviews" class="reviews wow animate__swing">
+        <div class="container">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="review__slider">
+
+            <div class="review-card">
+              <h3 class="review-card__name">Иван</h3>
+              <p class="review-card__rating">10/10</p>
+              <p class="review-card__text">Хочу сказать организаторам тура огромное спасибо за это шикарное путешествие!
+                Мы с
+                девушкой давно мечтали
+                побывать в Исландии и благодаря ребятам из iceland.travel эта страна оставила невероятные впечатления
+                далёкого, но теперь изведанного края, которые мы запомним надолго!</p>
+              <div class="review-card__media">
+                <img class="review-card__image" src="images/clients/client-1.jpg" alt="Клиент 1">
+              </div>
+              <div class="review-card__actions">
+                <button class="slider-btn slider-btn_prev review-card__slider-btn">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+                <button class="slider-btn slider-btn_next review-card__slider-btn">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <h3 class="review-card__name">Алексей</h3>
+              <p class="review-card__rating">10/10</p>
+              <p class="review-card__text">Тур в Исландию от iceland.travel превзошел все ожидания! Восхитительные
+                водопады,
+                гейзеры и невероятные ледники – это что-то невероятное. Гиды были профессиональны и доброжелательны,
+                маршруты продуманы до мелочей. Особенно впечатлило северное сияние, которое мы увидели благодаря
+                отличной
+                организации тура. Обязательно вернемся еще раз!</p>
+              <div class="review-card__media">
+                <img class="review-card__image" src="images/clients/client-2.jpg" alt="Клиент 2">
+              </div>
+              <div class="review-card__actions">
+                <button class="slider-btn slider-btn_prev review-card__slider-btn">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+                <button class="slider-btn slider-btn_next review-card__slider-btn">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <h3 class="review-card__name">Елена</h3>
+              <p class="review-card__rating">8/10</p>
+              <p class="review-card__text">Путешествие с iceland.travel было замечательным. Природа Исландии просто
+                завораживает, особенно водопад Гюдльфосс и вулканическое побережье. Гиды были профессиональны, автобусы
+                комфортны. Единственный минус – немного спешный график, хотелось бы больше времени на осмотр
+                достопримечательностей. В целом, остались довольны и рекомендуем этот тур!</p>
+              <div class="review-card__media">
+                <img class="review-card__image" src="images/clients/client-3.jpg" alt="Клиент 1">
+              </div>
+              <div class="review-card__actions">
+                <button class="slider-btn slider-btn_prev review-card__slider-btn">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM16 3.5L1 3.5V4.5L16 4.5V3.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+                <button class="slider-btn slider-btn_next review-card__slider-btn">
+                  <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0L0 4.5Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="order" class="order wow animate__zoomIn">
-      <h2 class="order__title">Забронировать путешествие</h2>
-      <form id="order-form" class="order__form" action="https://testologia.ru/checkout" method="POST">
-        <div class="order__form-control">
-          <p class="order__form-text">Количество человек</p>
-          <div class="order__form-radio-buttons">
-            <label class="order__form-radio"><input class="order__form-radio-input" type="radio" name="group-size"
-                value="1">1</label>
-            <label class="order__form-radio order__form-radio_active1"><input class="order__form-radio-input"
-                type="radio" name="group-size" value="2">2</label>
-            <label class="order__form-radio"><input class="order__form-radio-input" type="radio" name="group-size"
-                value="3">3</label>
-            <label class="order__form-radio"><input class="order__form-radio-input" type="radio" name="group-size"
-                value="4">4</label>
-            <label class="order__form-radio"><input class="order__form-radio-input" type="radio" name="group-size"
-                value="5">5</label>
-            <label class="order__form-radio"><input class="order__form-radio-input" type="radio" name="group-size"
-                value="6">6</label>
-            <label class="order__form-radio"><input class="order__form-radio-input" type="radio" name="group-size"
-                value="7">7+</label>
+      <section id="gallery" class="gallery wow animate__zoomIn">
+        <div class="container">
+          <h2 class="gallery__title">Фотогалерея</h2>
+          <div class="owl-carousel owl-theme gallery__multiple">
+
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image1.jpg" alt="Лед">
+              <img class="gallery__image" src="images/gallery/image2.jpg" alt="Водопад">
+              <img class="gallery__image" src="images/gallery/image3.jpg" alt="Гора на закате">
+              <img class="gallery__image" src="images/gallery/image4.jpg" alt="Лед, покрытый снегом">
+              <img class="gallery__image" src="images/gallery/image5.jpg" alt="Холмы со снегом">
+            </div>
+
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image6.jpg" alt="Полярное сияние">
+              <img class="gallery__image" src="images/gallery/image7.jpg" alt="Люди на фоне горы">
+              <img class="gallery__image" src="images/gallery/image8.jpg" alt="Гора с водопадом">
+              <img class="gallery__image" src="images/gallery/image9.jpg" alt="Река в каньоне">
+              <img class="gallery__image" src="images/gallery/image10.jpg" alt="Ледники">
+            </div>
+
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image11.jpg" alt="Ледяная пещера">
+              <img class="gallery__image" src="images/gallery/image12.jpg" alt="Полярное сияние">
+              <img class="gallery__image" src="images/gallery/image13.jpg" alt="Река в каньоне">
+              <img class="gallery__image" src="images/gallery/image14.jpg" alt="SPA Голубая Лагуна">
+              <img class="gallery__image" src="images/gallery/image15.jpg" alt="Ледяная скала">
+            </div>
+
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image16.jpg" alt="Озеро на фоне холма">
+              <img class="gallery__image" src="images/gallery/image17.jpg" alt="Водопад">
+              <img class="gallery__image" src="images/gallery/image18.jpg" alt="Горы">
+              <img class="gallery__image" src="images/gallery/image19.jpg" alt="Купальни в каньоне Хусафелл">
+              <img class="gallery__image" src="images/gallery/image20.jpg" alt="Луг и дом">
+            </div>
+          </div>
+
+          <div class="owl-carousel owl-theme gallery__single">
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image1.jpg" alt="Лед">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image2.jpg" alt="Водопад">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image3.jpg" alt="Гора на закате">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image4.jpg" alt="Лед, покрытый снегом">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image5.jpg" alt="Холмы со снегом">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image6.jpg" alt="Полярное сияние">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image7.jpg" alt="Люди на фоне горы">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image8.jpg" alt="Гора с водопадом">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image9.jpg" alt="Река в каньоне">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image10.jpg" alt="Ледники">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image11.jpg" alt="Ледяная пещера">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image12.jpg" alt="Полярное сияние">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image13.jpg" alt="Река в каньоне">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image14.jpg" alt="SPA Голубая Лагуна">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image15.jpg" alt="Ледяная скала">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image16.jpg" alt="Озеро на фоне холма">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image17.jpg" alt="Водопад">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image18.jpg" alt="Горы">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image19.jpg" alt="Купальни в каньоне Хусафелл">
+            </div>
+            <div class="gallery__slider item">
+              <img class="gallery__image" src="images/gallery/image20.jpg" alt="Луг и дом">
+            </div>
           </div>
         </div>
-        <input class="order__form-text-input order__form-control" type="text" name="name" placeholder="Ваше имя">
-        <input id="phone-number" class="order__form-text-input order__form-control" type="tel" name="phone" placeholder="Ваш телефон">
-        <button id="create-order" class="order__form-btn" type="submit">Отправить заявку</button>
-      </form>
+      </section>
 
-      <div class="popup-container">
-        <div class="popup">
-          <button class="cancel popup__cancel">
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" viewBox="0 0 512 512">
-              <g>
-                <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+      <section id="order" class="order wow animate__zoomIn">
+        <h2 class="order__title">Забронировать путешествие</h2>
+        <form id="order-form" class="order__form" action="https://testologia.ru/checkout" method="POST">
+          <div class="order__form-control">
+            <p class="order__form-text">Количество человек</p>
+            <div class="order__form-radio-buttons">
+              <label class="order__form-radio"><input class="order__form-radio-input" type="radio" name="group-size"
+                  value="1">1</label>
+              <label class="order__form-radio order__form-radio_active1"><input class="order__form-radio-input"
+                  type="radio" name="group-size" value="2">2</label>
+              <label class="order__form-radio"><input class="order__form-radio-input" type="radio" name="group-size"
+                  value="3">3</label>
+              <label class="order__form-radio"><input class="order__form-radio-input" type="radio" name="group-size"
+                  value="4">4</label>
+              <label class="order__form-radio"><input class="order__form-radio-input" type="radio" name="group-size"
+                  value="5">5</label>
+              <label class="order__form-radio"><input class="order__form-radio-input" type="radio" name="group-size"
+                  value="6">6</label>
+              <label class="order__form-radio"><input class="order__form-radio-input" type="radio" name="group-size"
+                  value="7">7+</label>
+            </div>
+          </div>
+          <input class="order__form-text-input order__form-control" type="text" name="name" placeholder="Ваше имя">
+          <input id="phone-number" class="order__form-text-input order__form-control" type="tel" name="phone"
+            placeholder="Ваш телефон">
+          <button id="create-order" class="order__form-btn" type="submit">Отправить заявку</button>
+        </form>
+
+        <div class="popup-container">
+          <div class="popup">
+            <button class="cancel hidden popup__cancel">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" viewBox="0 0 512 512">
+                <g>
+                  <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
                 L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
                 c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
                 l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
                 L284.286,256.002z" />
-              </g>
-            </svg>
-          </button>
-          <div class="popup__logo"><img class="popup__logo-image" src="images/iceberg.svg" alt="Логотип"></div>
-          <h2 class="popup__title">Спасибо за заявку!</h2>
-          <p class="popup__text">Ваша заявка принята. В ближайшее время с вами свяжется наш менеджер.</p>
-          <button class="btn popup__btn">Хорошо</button>
+                </g>
+              </svg>
+            </button>
+            <div class="popup__logo"><img class="popup__logo-image" src="images/iceberg.svg" alt="Логотип"></div>
+            <h2 class="popup__title">Спасибо за заявку!</h2>
+            <p class="popup__text">Ваша заявка принята. В ближайшее время с вами свяжется наш менеджер.</p>
+            <button class="btn popup__btn">Хорошо</button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="container footer__container">

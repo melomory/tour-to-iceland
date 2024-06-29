@@ -1,0 +1,102 @@
+.program {
+  padding-top: 86px;
+  padding-bottom: 90px;
+
+  &__title {
+    color: @secondary-color;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 62px;
+  }
+
+  &__tour {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+  }
+
+  &__tour-media {
+    grid-column: 1 / span 5;
+    grid-row: 1 / 6;
+    align-self: start;
+
+    background: @secondary-color;
+    padding: 34px 0 32px 75px;
+    max-width: 399px;
+    max-height: 448px;
+  }
+
+  &__tour-day {
+    grid-column: 7 / span 6;
+    grid-row: 1;
+
+    font-size: 25px;
+    color: @secondary-color;
+    font-weight: 600;
+    margin-top: 0;
+    margin-left: 74px;
+    line-height: 1;
+  }
+
+  &__tour-total-day {
+    font-size: 15px;
+    color: @fade-color;
+  }
+
+  &__tour-title {
+    grid-column: 7 / span 6;
+    grid-row: 2;
+
+    margin: 25px 0 19px 74px;
+    font-size: 20px;
+    color: @secondary-color;
+    font-weight: 600;
+  }
+
+  &__tour-text {
+    grid-column: 7 / span 6;
+    grid-row: 3;
+
+    font-size: 16px;
+    color: @secondary-color;
+    line-height: 1.438;
+    margin: 0 0 0 74px;
+    max-height: 150px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+
+  &__actions {
+    grid-column: 7 / span 6;
+    grid-row: 4;
+
+    display: flex;
+    gap: 22px;
+    margin: 51px 0 38px 74px;
+  }
+
+  &__download-link {
+    grid-column: 7 / span 6;
+    grid-row: 5;
+    margin-left: 74px;
+  }
+}
+
+.download-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &__text {
+    font-size: 16px;
+    color: @secondary-color;
+    text-decoration: underline;
+  }
+
+  &__icon {
+    path {
+      fill: @secondary-color;
+    }
+  }
+}

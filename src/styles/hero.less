@@ -1,0 +1,132 @@
+.hero {
+  background: @secondary-color;
+  color: @primary-color;
+  padding-bottom: 91px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+  }
+
+  &__title {
+    grid-column: 1 / span 12;
+    grid-row: 1;
+    z-index: 2;
+
+    font-size: 60px;
+    font-weight: 600;
+    margin: 108px 0 20px -6px;
+    letter-spacing: 0.01em;
+
+    &_accent {
+      color: @secondary-color;
+    }
+  }
+
+  &__description {
+    grid-column: 1 / span 12;
+    grid-row: 2;
+    z-index: 2;
+
+    font-size: 35px;
+    margin-top: 7px;
+    margin-bottom: 60px;
+    letter-spacing: 0.01em;
+
+    &_accent {
+      color: @secondary-color;
+    }
+  }
+
+  &__btn {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    z-index: 2;
+
+    padding-right: 33px;
+    position: relative;
+    width: 220px;
+
+    &::after {
+      display: inline-block;
+      content: "";
+      border-right: 1px solid @secondary-color;
+      border-bottom: 1px solid @secondary-color;
+      position: relative;
+      top: 1px;
+      right: -28px;
+      width: 12px;
+      height: 12px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__play-action {
+    grid-column: 4 / span 6;
+    grid-row: 3;
+    z-index: 2;
+
+    margin-left: 14px;
+    text-decoration: none;
+  }
+
+  &__image {
+    grid-row: 1 / 5;
+    grid-column: 1 / span 12;
+    z-index: 1;
+
+    background: -616px -52px / 1631px auto no-repeat url(../images/hero-ice.jpg);
+    position: relative;
+    top: 0;
+    left: 278px;
+    max-width: 1005px;
+    min-height: 622px;
+  }
+
+  &__details {
+    grid-row: 2 / 6;
+    grid-column: 8 / span 5;
+    z-index: 2;
+    position: relative;
+    min-width: min(450px, 100vw);
+  }
+
+  &__curve {
+    position: relative;
+    top: 102px;
+    left: 46px;
+  }
+
+  &__details-list {
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    list-style: none;
+  }
+
+  &__detail-item {
+    position: absolute;
+    line-height: 1;
+
+    &:nth-of-type(1) {
+      top: 91px;
+      left: 45px;
+    }
+
+    &:nth-of-type(2) {
+      top: -67px;
+      left: 126px;
+    }
+
+    &:nth-of-type(3) {
+      top: -86px;
+      left: 340px;
+    }
+  }
+
+  &__item-text {
+    font-weight: 500;
+    margin: 8px 0;
+  }
+}

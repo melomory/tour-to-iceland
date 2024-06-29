@@ -1,4 +1,6 @@
 $(() => {
+  initBurgerMenu();
+
   $("#video-play-action").on("click", function (evt) {
     evt.preventDefault();
 
@@ -94,6 +96,32 @@ function isFormValid() {
   });
 
   return isValid;
+}
+
+function initBurgerMenu() {
+  const $headerCancelButton = $("#header-cancel");
+  const $navigationMenu = $(".header__navigation-menu");
+  $("#burger-button").on("click", function (evt) {
+    toggleBurgerMenu($headerCancelButton, $navigationMenu);
+  });
+
+  $navigationMenu
+    .find($(".header__link"))
+    .on("click", () => toggleBurgerMenu($headerCancelButton, $navigationMenu));
+
+  $headerCancelButton.on("click", () =>
+    toggleBurgerMenu($headerCancelButton, $navigationMenu)
+  );
+}
+
+function toggleBurgerMenu($headerCancelButton, $navigationMenu) {
+  if ($headerCancelButton.css("display") !== "none") {
+    $navigationMenu.css({ display: "none" });
+    $headerCancelButton.css({ display: "none" });
+  } else {
+    $navigationMenu.css({ display: "flex" });
+    $headerCancelButton.css({ display: "block" });
+  }
 }
 
 function sendForm() {

@@ -1,0 +1,77 @@
+.order {
+  padding-top: 53px;
+  background: center / cover no-repeat url(../images/bg-volcano.jpg);
+  min-height: 604px;
+  position: relative;
+
+  &__title {
+    font-size: 35px;
+    color: @secondary-color;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 336px;
+    gap: 20px;
+  }
+
+  &__form-text {
+    font-size: 16px;
+    font-family: "Muller", sans-serif;
+    color: @secondary-color;
+    font-weight: 400;
+    margin-top: 28px;
+  }
+
+  &__form-radio {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    color: @secondary-color;
+    border: 1px solid @secondary-color;
+    font-size: 20px;
+    padding: 7px 14px 6px;
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+
+    &:has(input[type="radio"]:checked) {
+      background: @secondary-color;
+      color: @primary-color
+    }
+  }
+
+  &__form-radio-input {
+    display: none;
+  }
+
+  &__form-radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__form-text-input {
+    outline: none;
+    border: 1px solid @secondary-color;
+    background: transparent;
+    color: @secondary-color;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 14px;
+  }
+
+  &__form-btn {
+    background: @secondary-color;
+    font-size: 16px;
+    color: @primary-color;
+    font-weight: 500;
+    padding: 14px 14px 17px 14px;
+    cursor: pointer;
+    border: none;
+  }
+}

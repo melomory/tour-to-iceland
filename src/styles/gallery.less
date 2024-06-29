@@ -1,0 +1,85 @@
+.gallery {
+  padding-top: 53px;
+  padding-bottom: 85px;
+
+  // Увеличена специфичность для использования библиотеки owl.carousel.
+  & &__single {
+    display: none;
+  }
+
+  &__title {
+    font-size: 35px;
+    font-weight: 600;
+    color: @secondary-color;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 59px;
+  }
+
+  &__slider {
+    position: relative;
+    min-height: 380px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+  }
+
+  &__image {
+    position: relative;
+    cursor: pointer;
+
+    &:nth-child(1) {
+      grid-column: 1 / span 4;
+      grid-row: 1;
+      align-self: center;
+      top: 5px;
+      left: 0;
+
+      max-width: 328px;
+      max-height: 290px;
+    }
+
+    &:nth-child(2) {
+      grid-column: 4 / span 4;
+      justify-self: center;
+      grid-row: 1;
+      top: 0;
+      left: -17px;
+
+      max-width: 147px;
+      max-height: 126px;
+    }
+
+    &:nth-child(3) {
+      grid-column: 6 / span 4;
+      justify-self: center;
+      grid-row: 1;
+      top: 20px;
+      left: 13px;
+
+      max-width: 208px;
+      max-height: 145px;
+    }
+
+    &:nth-child(4) {
+      grid-column: 5 / span 4;
+      grid-row: 1;
+      align-self: end;
+      justify-self: center;
+      bottom: 10px;
+      left: 4px;
+
+      max-width: 298px;
+      max-height: 167px;
+    }
+
+    &:nth-child(5) {
+      grid-column: 9 / span 4;
+      grid-row: 1;
+      justify-self: end;
+
+      max-width: 285px;
+      max-height: 380px;
+    }
+  }
+}

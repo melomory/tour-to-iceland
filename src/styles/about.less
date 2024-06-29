@@ -1,0 +1,40 @@
+.about {
+  padding-top: 122px;
+  padding-bottom: 90px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+    color: @secondary-color;
+  }
+
+  &__title {
+    grid-column: 8 / span 5;
+    grid-row: 1;
+
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0 0 51px 16px;
+    line-height: 0.75;
+  }
+
+  &__text {
+    grid-column: 8 / span 5;
+    grid-row: 2;
+
+    font-size: 16px;
+    line-height: 1.438;
+    margin: 0 -1px 0 14px;
+  }
+
+  &__media {
+    grid-column: 1 / span 5;
+    grid-row: span 3;
+
+
+    background: @secondary-color;
+    padding: 72px 0 69px 43px;
+    max-width: 399px;
+  }
+}
