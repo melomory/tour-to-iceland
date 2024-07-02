@@ -518,6 +518,7 @@
 
     &__details {
       min-width: min(320px, 100vw);
+      justify-self: center;
     }
 
     &__detail-item {
@@ -637,7 +638,7 @@
 
     &__info-image {
       top: 0;
-      left: -73px;
+      left: -54px;
 
       width: unset;
       max-width: min(237px, 100vw);
@@ -919,6 +920,10 @@
 }
 
 @media screen and (max-width: 340px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .places {
     &__map-path {
       top: 23.8%;
